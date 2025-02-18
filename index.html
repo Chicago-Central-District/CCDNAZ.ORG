@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="churches.js" defer></script>
+    <script src="nav.js" defer></script>
+    <title>CCD | Home</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="images/ccd-letter-logo.jpg" alt="Church Logo" class="logo">
+    
+        <!-- Hamburger Menu Button -->
+        <button id="menu-toggle" class="hamburger">
+            ☰
+        </button>
+    
+        <!-- Navbar Links -->
+        <ul class="navbar-links" id="navbar-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#ministers">Ministers</a></li>
+            <li><a href="#churches">Churches</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li id="give-now-mobile"><a href="#give" class="give-now">Give Now</a></li>
+        </ul>
+    
+        <!-- Desktop "Give Now" Button -->
+        <a href="https://secure.egsnetwork.com/donate/9B26B96F2E1246C" class="give-now" id="give-now-desktop" target="_blank">Give Now</a> 
+    </nav>
+    
+    
+    
+    
+
+
+
+    <div class="fullscreen-image-container">
+        <img src="images/worship.png" alt="Fullscreen Image" class="fullscreen-image">
+    </div>
+
+
+
+    <section class="mission-vision">
+        <div class="mission-vision-content">
+          <h2 class="mission-vision-title">Our DISTRICT Mission and Vision</h2>
+          <div class="mission-vision-items">
+            <div class="mission-vision-item">
+              <h3 class="mission-vision-item-title">Developing Leaders</h3>
+              <div class="icon">
+                <img src="images/leader.png" alt="Developing Leaders Icon">
+              </div>
+            </div>
+            <div class="mission-vision-item">
+              <h3 class="mission-vision-item-title">Resourcing Pastors and Churches</h3>
+              <div class="icon">
+                <img src="images/teamwork.png" alt="Resourcing Pastors and Churches Icon">
+              </div>
+            </div>
+            <div class="mission-vision-item">
+              <h3 class="mission-vision-item-title">Planting Churches</h3>
+              <div class="icon">
+                <img src="images/church.png" alt="Planting Churches Icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+
+
+    <div class="container">
+        <div class="card">
+          <img src="images/WHO_WE_ARE_NMI3.jpg" alt="Product 1">
+          <div class="card-body">
+            <h3 class="card-title">Missions</h3>
+            <p class="card-description">Look around for latest news, missionary information, deputation schedules, outreach opportunities, and more.</p>
+            <a href="https://ccdnmi.org/" class="card-link" target="_blank">Learn More</a>
+        </div>
+        </div>
+        <div class="card">
+          <img src="images/ndi.jpeg" alt="Product 2">
+          <div class="card-body">
+            <h3 class="card-title">Discipleship</h3>
+            <p class="card-description">Nazarene Discipleship International (NDI) is committed to evangelism, disciple-making, and leader development</p>
+            <a href="#discipleship" class="card-link">Learn More</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/The+Narrow+Official.jpeg" alt="Product 3">
+          <div class="card-body">
+            <h3 class="card-title">Teens</h3>
+            <p class="card-description">CCD NYI partners with the local churches of the Chicago Central District to create life-changing moments and conversations that call young people to a dynamic life in Jesus Christ.</p>
+            <a href="https://ccdnyi.com/" class="card-link" target="_blank">Learn More</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/children.jpg" alt="Product 4">
+          <div class="card-body">
+            <h3 class="card-title">Children</h3>
+            <p class="card-description">This group exists as a resource to people in children's ministry on the Chicago Central District. This is a great place to share resources, ask for advice and work through issues. Please add leaders and volunteers from your church.</p>
+            <a href="#" class="card-link">Learn More</a>
+          </div>
+        </div>
+        <!-- Repeat for more items -->
+      </div>
+
+
+      <h1 id="directory">Church Directory</h1>
+      <div id="data-container" class="panel-container"></div>
+      <!-- Modal structure -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <span id="close-modal" class="close">&times;</span>
+              <h2 id="modal-title"></h2>
+              <p id="modal-address"></p>
+              <p id="modal-phone"></p>
+              <a id="modal-website" href="" target="_blank">Visit Website</a>
+            </div>
+        </div>
+
+
+
+        <div class="content-container">
+            <!-- Even set: Image on left -->
+            <div class="content-item even">
+              <div class="content-text">
+                <h2 class="content-title">CHURCH OF THE NAZARENE</h2>
+                <p class="content-description">Organized in 1908, the Church of the Nazarene is dedicated to make Christ-like disciples in the nations. The denomination is home to about 2.5 million members worshipping in more than 30,000 congregations in 162 world areas.</p>
+                <a class="content-link" href="https://www.nazarene.org/" target="_blank">Visit Website</a>
+            </div>
+              <div class="content-image">
+                <img src="images/COTN+Logo.jpg" alt="CHURCH OF THE NAZARENE">
+              </div>
+            </div>
+          
+            <!-- Odd set: Image on right -->
+            <div class="content-item odd">
+              <div class="content-text">
+                <h2 class="content-title">USA/CANADA REGION</h2>
+                <p class="content-description">The mission of the USA/Canada Region is the same as the denomination: to make Christlike disciples in the nations. The vision for the region encapsulates the “heart cries” heard from people across the United States and Canada. Mobilizing all Nazarenes in unity in the midst of a polarized world; calling our churches to engage in blessing our community; bringing people to Jesus especially our younger generations; and embracing the transformation of the whole person through becoming Christlike disciples.</p>
+                <a class="content-link" href="https://usacanadaregion.org/" target="_blank">Visit Website</a>
+            </div>
+              <div class="content-image">
+                <img src="images/COTN+USA+CAN.png" alt="USA/CANADA REGION">
+              </div>
+            </div>
+
+            <!-- Even set: Image on left -->
+            <div class="content-item even">
+              <div class="content-text">
+                <h2 class="content-title">OLIVET NAZARENE UNIVERSITY</h2>
+                <p class="content-description">Olivet Nazarene University (ONU) is one of the nation’s premier Christian universities, that believes higher education should have a higher purpose. With accredited programs, award-winning academics, and a faculty touting degrees from a wide spectrum of world-class educational institutions, Olivet stands committed to integrating faith and learning.</p>
+                <a class="content-link" href="https://www.olivet.edu/" target="_blank">Visit Website</a>
+            </div>
+              <div class="content-image">
+                <img src="images/ONU+Logo.png" alt="OLIVET NAZARENE UNIVERSITY">
+              </div>
+            </div>
+          
+            <!-- Odd set: Image on right -->
+            <div class="content-item odd">
+              <div class="content-text">
+                <h2 class="content-title">NAZARENE BIBLE COLLEGE</h2>
+                <p class="content-description">Nazarene Bible College exists to glorify Jesus Christ as Lord by preparing adults to evangelize, disciple, and minister to the world. Since 1967 Nazarene Bible College has fulfilled its mission of preparing men and women for ministry. Nazarene Bible College is one of ten Nazarene institutions of higher education in the United States. It is one of the two institutions charged by the denomination with the relatively exclusive task of preparing ministers.</p>
+                <a class="content-link" href="https://www.nbc.edu/" target="_blank">Visit Website</a>
+            </div>
+              <div class="content-image">
+                <img src="images/NBC+Logo.png" alt="NAZARENE BIBLE COLLEGE">
+              </div>
+            </div>
+        </div>
+          
+          
+
+        <div class="video-resource-card">
+            <div class="video-info">
+              <h3>District Resourcing Videos</h3>
+              <p>Explore a variety of videos, resources, and tutorials designed to help you grow in your ministry.</p>
+              <a href="https://example.com" class="video-link">Explore Now</a>
+            </div>
+            <div class="video-background"></div>
+          </div>
+          
+
+          
+
+    <script type="text/javascript" src="https://form.jotform.com/jsform/250457722029153"></script>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <p class="district-name">Chicago Central District</p>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube"></a>
+            <a href="MAILTO:admin@ccdnaz.org" target="_blank"><img src="images/email.png" alt="Email"></a>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
