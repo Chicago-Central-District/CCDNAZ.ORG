@@ -1,0 +1,563 @@
+:root{
+    --dark: black;
+    --light-blue: #0081b8;
+    --dark-blue: #083345;
+    --dark-blue-transparent: rgba(8, 51, 69, 0.5);
+    --text: white;
+    --gray: #161616;
+    --gray-transparent: rgba(22, 22, 22, 0.5);
+}
+
+/* Common Styles */
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: var(--dark); */
+    min-height: 100vh;
+}
+body{
+    background: radial-gradient(ellipse at top, var(--dark) 65%, transparent),
+    radial-gradient(ellipse at top, var(--dark-blue) 100%, transparent),
+    radial-gradient(ellipse at bottom, var(--light-blue), transparent);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Image at Top */
+.fullscreen-image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+  
+  .fullscreen-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area */
+    z-index: -1; /* Keeps the image in the background */
+  }
+
+
+
+  /* Mission & Vision */
+  .mission-vision {
+    background: #1d3557; /* Dark blue background for contrast */
+    color: white;
+    padding: 60px 20px; /* Space around content */
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .mission-vision-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .mission-vision-title {
+    font-size: 2.5rem; /* Large font size for the title */
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+  }
+  
+  .mission-vision-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px; /* Gap between the items */
+  }
+  
+  .mission-vision-item {
+    background: var(--gray); /* Light gray background for each item */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px; /* Ensures the item doesn't get too narrow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .mission-vision-item:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .mission-vision-item-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--light-blue); /* Use light blue color for the titles */
+    margin-bottom: 15px;
+  }
+  .icon {
+    width: 50%; /* Adjust size as needed */
+    height: auto;
+    margin: 0 auto 15px;
+  }
+  
+  .icon img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .mission-vision-title {
+      font-size: 2rem;
+    }
+    
+    .mission-vision-items {
+      flex-direction: column; /* Stack items on small screens */
+      gap: 20px;
+    }
+  
+    .mission-vision-item {
+      min-width: calc(100%-60px); /* Make items take full width on small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mission-vision-title {
+      font-size: 1.8rem;
+    }
+    
+    .mission-vision-item {
+      padding: 20px;
+    }
+  }
+
+
+
+/* Cards */
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; /* Increased gap between the cards */
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: var(--gray);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Slightly moved down to create an effect */
+    animation: fadeInUp 1.5s forwards; /* Apply animation with a longer duration */
+    animation-delay: 0.5s; /* Optional: delay the start of the animation */
+    display: flex;
+    flex-direction: column;
+    border: solid 1px var(--light-blue);
+  }
+
+.card.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-body {
+    padding: 15px;
+    flex-grow: 1; /* Allows it to fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes content to top and bottom */
+}
+  
+  .card-title {
+    font-size: 1.8rem;
+    color: var(--light-blue); /* Use custom light blue for title */
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: #bdc3c7;
+    margin-bottom: 35px;
+  }
+  
+  .card-link {
+    text-decoration: none;
+    color: var(--text); /* Use custom light blue for link */
+    font-weight: bold;
+    background: var(--light-blue);
+    padding: 15px 20px;
+    margin: 20px 0px 0px 0px;
+    border-radius: 15px;
+    transition: ease-in-out 250ms;
+  }
+
+  .card-link:hover {
+    text-decoration: none;
+    color: var(--text); /* Use custom light blue for link */
+    font-weight: bold;
+    background: var(--light-blue);
+    padding: 15px 20px;
+    margin: 20px 0px 0px 0px;
+    border-radius: 15px;
+    transition: ease-in-out 250ms;
+    transform: scale(1.05);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1200px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr; /* 1 card per row */
+    }
+  }
+  
+  /* Keyframes for animation */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .card:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .card:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .card:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  .card:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+
+  /* Church Directory */
+  #directory {
+    text-align: center;
+    color: var(--light-blue);
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  #data-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Keeps spacing consistent */
+    padding: 20px; /* Default padding for all screens */
+  }
+
+  /* Add space on larger screens */
+@media (min-width: 1000px) {
+    #data-container {
+      padding: 40px 80px; /* More space on edges */
+    }
+  }
+  
+  /* Panel Styling */
+  .panel {
+    border: 5px solid var(--light-blue);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    background-image: url('images/texture.png');
+  }
+
+  .panel-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+  
+  .panel:hover {
+    transform: translateY(-10px);
+  }
+  
+  .panel-title {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: var(--light-blue);
+    margin-bottom: 10px;
+  }
+  
+  .panel-content {
+    font-size: 1.3rem;
+    color: white;
+  }
+  
+  @media (max-width: 600px) {
+    .panel {
+      width: 90%;
+    }
+  }
+
+
+  /* Modal Styling */
+  /* Modal background (darkens the page) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Darkened background */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modal content styling */
+  .modal-content {
+    background-color: var(--gray);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 80%;
+    color: white;
+    text-align: center;
+    border: solid 5px var(--light-blue);
+    font-size: 1.5rem;
+  }
+  
+#modal-website {
+    color: var(--light-blue);
+}
+#modal-website:visited {
+    color: var(--light-blue);
+}
+
+  /* Close button */
+  .close {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+
+
+
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* background-color: #e0e0e0; */
+    padding: 40px;
+  }
+  
+  .content-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--light-gray); /* Softer gray background for content item */
+    border-radius: 10px;
+    margin: 0 20px; /* Add some space between the content and edges */
+  }
+  
+  .content-item.even {
+    flex-direction: row;
+  }
+  
+  .content-item.odd {
+    flex-direction: row-reverse;
+  }
+  
+  .content-text {
+    width: 45%;
+  }
+  
+  .content-title {
+    font-size: 2rem;
+    color: var(--light-blue);
+    margin-bottom: 15px;
+  }
+  
+  .content-description {
+    font-size: 1rem;
+    color: #bdc3c7;
+    line-height: 1.5;
+  }
+
+  .content-link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--light-blue); /* Use your theme's light blue */
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: 2px solid var(--light-blue);
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .content-link:hover {
+    background-color: var(--light-blue);
+    color: #fff; /* White text on hover */
+  }
+  
+  .content-link:active {
+    background-color: var(--dark-blue); /* Slightly darker blue for active state */
+    color: #fff;
+  }  
+  
+  .content-image {
+    width: 45%;
+    max-width: 500px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .content-image img {
+    width: 90%;
+    border-radius: 10px;
+  }
+  
+  /* Adjusting for responsiveness */
+  @media (max-width: 965px) {
+    .content-item.odd, .content-item.even {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  
+    .content-text, .content-image {
+      width: 100%;
+    }
+  
+    .content-item {
+      margin: 0 10px; /* Adjust spacing on small screens */
+    }
+  }
+  
+
+
+
+
+
+
+  .video-resource-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-gray);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    height: 400px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .video-resource-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .video-info {
+    z-index: 2; /* Make sure content is above background */
+    text-align: center;
+    color: #fff;
+    padding: 40px 30px 70px 30px;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
+    border-radius: 10px;
+    position: absolute;
+  }
+  
+  .video-info h3 {
+    font-size: 2rem;
+    color: var(--light-blue);
+    margin-bottom: 15px;
+  }
+  
+  .video-info p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .video-link {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--light-blue);
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .video-link:hover {
+    background-color: var(--dark-blue);
+  }
+  
+  /* Background image styling */
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('images/technology-2608867_1280.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(10px); /* Blur to create contrast with text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .video-resource-card {
+      flex-direction: column;
+      height: 400px;
+    }
+  
+    .video-info {
+      max-width: 100%;
+      padding: 20px 15px;
+    }
+  }
+  

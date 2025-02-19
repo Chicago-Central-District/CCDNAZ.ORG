@@ -1,42 +1,61 @@
+:root {
+    --primary-blue: #5A9BD5;   /* Balanced sky blue */
+    --secondary-blue: #8FC1E3; /* Soft, calming blue */
+    --accent-blue: #1B6CA8;    /* Richer, deeper blue for contrast */
+    --dark-text-blue: #144A75; /* Strong navy for better readability */
+    --soft-gray-bg: #F2F7FC;   /* Light blue-gray for subtle contrast */
+}
+
 .footer {
-    background-color: var(--gray);
-    border-top: 4px solid var(--light-blue);
-    text-align: center;
+    background-color: var(--dark-text-blue);
+    color: var(--soft-gray-bg);
     padding: 20px 0;
-    color: white;
+  }
+
+  .footer .container{
+    padding: 0px 40px;
   }
   
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .footer-info {
+    font-size: 1rem;
+    margin-bottom: 0px;
   }
   
-  .district-name {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--light-blue);
-    margin-bottom: 10px;
+  .footer-social {
+    margin: 20px 0px;
+  }
+
+  .footer-social a img{
+    width: 40px;
+    height: 40px;
   }
   
-  .social-icons {
-    display: flex;
-    gap: 15px;
+  .social-link {
+    color: var(--soft-gray-bg);
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 1.1rem;
   }
   
-  .social-icons a {
-    display: inline-block;
-    width: 30px; /* Adjust icon size */
-    height: 30px;
-    transition: transform 0.3s ease;
+  .social-link:hover {
+    color: var(--soft-gray-bg);
   }
   
-  .social-icons a:hover {
-    transform: scale(1.2);
+  .footer-copyright {
+    font-size: 1rem;
   }
   
-  .social-icons img {
-    width: 100%;
-    height: auto;
+  @media (max-width: 768px) {
+    .footer .row {
+      text-align: center;
+    }
+  
+    .footer-info {
+      margin-bottom: 0px;
+    }
+  
+    .footer-social {
+      margin-bottom: 0px;
+    }
   }
   

@@ -1,64 +1,54 @@
-:root{
-    --dark: black;
-    --light-blue: #0081b8;
-    --dark-blue: #083345;
-    --dark-blue-transparent: rgba(8, 51, 69, 0.5);
-    --text: white;
-    --gray: #161616;
-    --gray-transparent: rgba(22, 22, 22, 0.5);
+:root {
+    --primary-blue: #5A9BD5;   /* Balanced sky blue */
+    --secondary-blue: #8FC1E3; /* Soft, calming blue */
+    --accent-blue: #1B6CA8;    /* Richer, deeper blue for contrast */
+    --dark-text-blue: #144A75; /* Strong navy for better readability */
+    --soft-gray-bg: #F2F7FC;   /* Light blue-gray for subtle contrast */
 }
 
-/* Common Styles */
-body, html{
+
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    /* background: var(--dark); */
-    min-height: 100vh;
-}
-body{
-    background: radial-gradient(ellipse at top, var(--dark) 65%, transparent),
-    radial-gradient(ellipse at top, var(--dark-blue) 100%, transparent),
-    radial-gradient(ellipse at bottom, var(--light-blue), transparent);
-    background-attachment: fixed;
-    overflow-x: hidden;
-}
-*{
-    font-family: 'Poppins', sans-serif;
+    background-color: var(--soft-gray-bg);
 }
 
-
-/* Image at Top */
-.fullscreen-image-container {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden;
-    margin-bottom: 50px;
-  }
-  
-  .fullscreen-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire area */
-    z-index: -1; /* Keeps the image in the background */
-  }
-
-
-
-  /* Mission & Vision */
-  .mission-vision {
-    background: #1d3557; /* Dark blue background for contrast */
+/* Hero Section */
+.hero {
+    background: url('images/cityscape.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    border-bottom-left-radius: 60% 100px;
+    border-bottom-right-radius: 60% 100px;
+}
+
+
+
+/* Mission & Vision */
+.mission-vision {
+    background: linear-gradient(to top, #00000080, #00000080), url('images/river-6175173_1280.jpg') no-repeat top center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    width: calc(100% - 40px);
+    color: var(--soft-gray-bg);
     padding: 60px 20px; /* Space around content */
     text-align: center;
     margin-bottom: 50px;
   }
   
   .mission-vision-content {
+    position: relative;
+    z-index: 1;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -78,9 +68,10 @@ body{
   }
   
   .mission-vision-item {
-    background: var(--gray); /* Light gray background for each item */
+    /* background: var(--secondary-blue); Light gray background for each item */
     padding: 30px;
     border-radius: 10px;
+    border: var(--soft-gray-bg) 1px solid;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     flex: 1;
     min-width: 250px; /* Ensures the item doesn't get too narrow */
@@ -98,16 +89,16 @@ body{
   .mission-vision-item-title {
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--light-blue); /* Use light blue color for the titles */
+    color: var(--soft-gray-bg); /* Use light blue color for the titles */
     margin-bottom: 15px;
   }
   .icon {
     width: 50%; /* Adjust size as needed */
     height: auto;
     margin: 0 auto 15px;
-  }
-  
-  .icon img {
+}
+
+.icon img {
     width: 100%;
     height: auto;
   }
@@ -138,102 +129,84 @@ body{
     }
   }
 
-
-
 /* Cards */
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px; /* Increased gap between the cards */
-    padding: 20px;
-  }
-  
-  .card {
-    background-color: var(--gray);
-    border-radius: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    transition: ease 500ms fadeInUp;
+}
+
+.card {
+    background-color: var(--light-gray);
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0; /* Initially hidden */
-    transform: translateY(20px); /* Slightly moved down to create an effect */
-    animation: fadeInUp 1.5s forwards; /* Apply animation with a longer duration */
-    animation-delay: 0.5s; /* Optional: delay the start of the animation */
     display: flex;
     flex-direction: column;
-    border: solid 1px var(--light-blue);
-  }
+    /* border: solid 2px var(--primary-blue); */
+    opacity: 0;
+    transform: translateY(50px);
+}
 
 .card.in-view {
-    opacity: 1;
-    transform: translateY(0);
+    animation: fadeInUp 1s ease-out forwards;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
-  
-  .card img {
+
+.card img {
     width: 100%;
     height: auto;
-  }
-  
-  .card-body {
-    padding: 15px;
-    flex-grow: 1; /* Allows it to fill available space */
+    border-bottom: solid 3px var(--accent-blue);
+}
+
+.card-body {
+    padding: 20px;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Pushes content to top and bottom */
+    justify-content: space-between;
 }
-  
-  .card-title {
-    font-size: 1.8rem;
-    color: var(--light-blue); /* Use custom light blue for title */
-    margin-bottom: 10px;
-  }
-  
-  .card-description {
-    font-size: 1rem;
-    color: #bdc3c7;
-    margin-bottom: 35px;
-  }
-  
-  .card-link {
-    text-decoration: none;
-    color: var(--text); /* Use custom light blue for link */
-    font-weight: bold;
-    background: var(--light-blue);
-    padding: 15px 20px;
-    margin: 20px 0px 0px 0px;
-    border-radius: 15px;
-    transition: ease-in-out 250ms;
-  }
 
-  .card-link:hover {
+.card-title {
+    font-size: 1.8rem;
+    color: var(--dark-text-blue);
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: var(--dark-text-blue);
+    margin-bottom: 20px;
+}
+
+.card-link {
     text-decoration: none;
-    color: var(--text); /* Use custom light blue for link */
+    color: white;
     font-weight: bold;
-    background: var(--light-blue);
-    padding: 15px 20px;
-    margin: 20px 0px 0px 0px;
-    border-radius: 15px;
-    transition: ease-in-out 250ms;
+    background: var(--dark-text-blue);
+    padding: 12px 18px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.card-link:hover {
+    background: var(--accent-blue);
     transform: scale(1.05);
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 1200px) {
+}
+
+@media (max-width: 768px) {
     .container {
-      grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+        padding: 20px;
     }
-  }
-  
-  @media (max-width: 768px) {
-    .container {
-      grid-template-columns: 1fr; /* 1 card per row */
-    }
-  }
-  
+}
   /* Keyframes for animation */
   @keyframes fadeInUp {
     to {
@@ -246,318 +219,133 @@ body{
   }
   
   .card:nth-child(2) {
-    animation-delay: 0.2s;
+    animation-delay: 0.25s;
   }
   
   .card:nth-child(3) {
-    animation-delay: 0.3s;
+    animation-delay: 0.5s;
   }
   
   .card:nth-child(4) {
-    animation-delay: 0.4s;
+    animation-delay: 0.75s;
   }
 
 
-  /* Church Directory */
-  #directory {
-    text-align: center;
-    color: var(--light-blue);
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-
-  #data-container {
+  /* About link section */
+  .full-width-section {
+    width: 100%;
+    height: auto; /* Takes up 100% of the viewport height */
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    gap: 20px; /* Keeps spacing consistent */
-    padding: 20px; /* Default padding for all screens */
-  }
-
-  /* Add space on larger screens */
-@media (min-width: 1000px) {
-    #data-container {
-      padding: 40px 80px; /* More space on edges */
-    }
+    overflow: hidden;
+    margin: 50px auto;
   }
   
-  /* Panel Styling */
-  .panel {
-    border: 5px solid var(--light-blue);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    text-align: center;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    background-image: url('images/texture.png');
-  }
-
-  .panel-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    justify-items: center;
+  .full-width-section .container-fluid {
+    padding: 0;
   }
   
-  .panel:hover {
-    transform: translateY(-10px);
-  }
-  
-  .panel-title {
-    font-size: 1.7rem;
-    font-weight: bolder;
-    color: var(--light-blue);
-    margin-bottom: 10px;
-  }
-  
-  .panel-content {
-    font-size: 1.3rem;
-    color: white;
-  }
-  
-  @media (max-width: 600px) {
-    .panel {
-      width: 90%;
-    }
-  }
-
-
-  /* Modal Styling */
-  /* Modal background (darkens the page) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    top: 0;
-    left: 0;
+  .full-width-section .row {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Darkened background */
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex: 2fr;
   }
   
-  /* Modal content styling */
-  .modal-content {
-    background-color: var(--gray);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;
-    width: 80%;
-    color: white;
-    text-align: center;
-    border: solid 5px var(--light-blue);
-    font-size: 1.5rem;
+  .full-width-section .col-md-6 {
+    background: linear-gradient(to top, #f2f7fcd2, #f2f7fcd2), url('images/ccd-regions/CCD+Map+Small.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 0;
+    width: 50%;
   }
   
-#modal-website {
-    color: var(--light-blue);
-}
-#modal-website:visited {
-    color: var(--light-blue);
-}
-
-  /* Close button */
-  .close {
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
+  .full-width-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
   }
   
-
-
-
-
-  .content-container {
+  .section-text-container {
+    padding: 20px 40px;
+    height: 90%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    /* background-color: #e0e0e0; */
-    padding: 40px;
-  }
-  
-  .content-item {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    background-color: var(--light-gray); /* Softer gray background for content item */
-    border-radius: 10px;
-    margin: 0 20px; /* Add some space between the content and edges */
+    color: var(--dark-text-blue); /* Text color changed to var(--dark-text-blue) */
   }
   
-  .content-item.even {
-    flex-direction: row;
+  .section-text-container h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 15px 0px;
   }
   
-  .content-item.odd {
-    flex-direction: row-reverse;
-  }
-  
-  .content-text {
-    width: 45%;
-  }
-  
-  .content-title {
-    font-size: 2rem;
-    color: var(--light-blue);
-    margin-bottom: 15px;
-  }
-  
-  .content-description {
-    font-size: 1rem;
-    color: #bdc3c7;
-    line-height: 1.5;
+  .section-text-container p {
+    font-size: 1.6rem;
+    font-weight: bold;
   }
 
-  .content-link {
-    display: inline-block;
-    text-decoration: none;
-    color: var(--light-blue); /* Use your theme's light blue */
+  .section-text-container ul li {
+    font-size: 1.6rem;
     font-weight: bold;
-    font-size: 1rem;
-    padding: 10px 15px;
-    border: 2px solid var(--light-blue);
-    border-radius: 25px;
-    transition: background-color 0.3s, color 0.3s;
-    margin-top: 20px;
   }
   
-  .content-link:hover {
-    background-color: var(--light-blue);
-    color: #fff; /* White text on hover */
-  }
-  
-  .content-link:active {
-    background-color: var(--dark-blue); /* Slightly darker blue for active state */
-    color: #fff;
-  }  
-  
-  .content-image {
-    width: 45%;
-    max-width: 500px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .about-learn-more {
+    background: var(--dark-text-blue);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 1rem;
+    margin-top: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: fit-content;
   }
   
-  .content-image img {
-    width: 90%;
-    border-radius: 10px;
-  }
+  @media (max-width: 1000px) {
+    .full-width-section .row {
+      flex-direction: column;
+    }
   
-  /* Adjusting for responsiveness */
-  @media (max-width: 965px) {
-    .content-item.odd, .content-item.even {
-      flex-direction: column-reverse;
+    .section-text-container {
       text-align: center;
     }
   
-    .content-text, .content-image {
-      width: 100%;
+    .section-text-container h2 {
+      font-size: 1.75rem;
     }
   
-    .content-item {
-      margin: 0 10px; /* Adjust spacing on small screens */
+    .section-text-container p {
+      font-size: 1rem;
     }
-  }
-  
 
-
-
-
-
-
-  .video-resource-card {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--light-gray);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    margin-bottom: 30px;
-    height: 400px;
-    transition: transform 0.3s ease;
-    overflow: hidden;
-  }
-  
-  .video-resource-card:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-  }
-  
-  .video-info {
-    z-index: 2; /* Make sure content is above background */
-    text-align: center;
-    color: #fff;
-    padding: 40px 30px 70px 30px;
-    max-width: 500px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
-    border-radius: 10px;
-    position: absolute;
-  }
-  
-  .video-info h3 {
-    font-size: 2rem;
-    color: var(--light-blue);
-    margin-bottom: 15px;
-  }
-  
-  .video-info p {
-    font-size: 1.1rem;
-    color: #ddd;
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-  
-  .video-link {
-    font-size: 1.2rem;
-    color: #fff;
-    background-color: var(--light-blue);
-    padding: 12px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .video-link:hover {
-    background-color: var(--dark-blue);
-  }
-  
-  /* Background image styling */
-  .video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('images/technology-2608867_1280.jpg') no-repeat center center;
-    background-size: cover;
-    filter: blur(10px); /* Blur to create contrast with text */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .video-resource-card {
-      flex-direction: column;
-      height: 400px;
+    .section-text-container ul li {
+        font-size: 1rem;
     }
-  
-    .video-info {
-      max-width: 100%;
-      padding: 20px 15px;
+
+    .about-learn-more {
+      width: calc(100% - 40px);
+    }
+
+    .full-width-section > div > div {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .full-width-section .col-md-6 {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
   }
   
+
+
+
+
+

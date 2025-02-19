@@ -1,150 +1,103 @@
-:root{
-    --dark: black;
-    --light-blue: #0081b8;
-    --dark-blue: #083345;
-    --dark-blue-transparent: rgba(8, 51, 69, 0.5);
-    --text: white;
-    --gray: #161616;
-    --gray-transparent: rgba(22, 22, 22, 0.5);
-    --give-now-color: #ff8c00; /* Orange for Give Now button */
-    --give-now-hover: #ff7a00; /* Darker orange for hover effect */
+/* Sticky header */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-
-/* Navbar Base Styles */
-.navbar {
-    background-color: var(--gray);
-    color: #fff;
-    padding: 15px 20px;
+/* Navigation container */
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 5px solid var(--light-blue);
-    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
 }
 
-/* Logo */
-.logo {
-    width: 60px;
-    height: auto;
-}
-
-/* Navbar Links */
-.navbar-links {
+/* Logo styling */
+#logos {
     display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    gap: 10px;
 }
 
-.navbar-links li {
-    margin: 0 20px;
+.nav-image {
+    height: 50px;
+    width: auto;
 }
 
-.navbar-links a {
-    color: #fff;
+/* Navigation links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
+    font-size: 1.3em;
+    transition: color 0.3s ease-in-out;
 }
 
-.navbar-links a:hover {
-    background-color: var(--light-blue);
-    border-radius: 5px;
+nav ul li a:hover {
+    color: var(--light-blue);
+}
+
+#give-now{
+    border-radius: 30px;
+    border: solid 3px white;
+    color: white;
+    padding: 10px 15px;
+}
+#give-now:hover{
+    border-radius: 30px;
+    border: solid 3px white;
+    color: white;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.157);
 }
 
 /* Hamburger Menu */
 .hamburger {
-    display: none;
-    font-size: 36px;
-    background: none;
-    border: none;
-    color: white;
+    display: none; /* Hidden on larger screens */
+    font-size: 2rem;
     cursor: pointer;
-}
-
-/* Give Now Button */
-.give-now {
-    background-color: var(--gray);
     color: white;
-    font-size: 16px;
-    padding: 15px 20px;
-    border-radius: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    border: solid 5px var(--light-blue);
-    margin-left: 20px;
 }
 
-.give-now:hover {
-    background-color: var(--dark-blue);
-}
-
-/* Responsive Styles */
-@media (max-width: 911px) {
-    .navbar {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
+/* Responsive Navigation */
+@media screen and (max-width: 1050px) {
     .hamburger {
-        display: block;
+        display: block; /* Show hamburger on smaller screens */
     }
 
-    .navbar-links {
-        display: none;
+    nav ul {
+        display: none; /* Hide menu by default */
         flex-direction: column;
-        width: 100%;
-        background: var(--gray);
         position: absolute;
-        top: 85px;
-        left: 0;
+        top: 70px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        width: 100%;
         text-align: center;
         padding: 20px 0;
-        border-top: 5px solid var(--light-blue);
     }
 
-    .navbar-links.show {
-        display: flex;
+    nav ul.show {
+        display: flex; /* Show menu when toggled */
     }
 
-    .navbar-links li {
-        margin: 20px 0;
-    }
-
-    #give-now-desktop {
-        display: none;
-    }
-
-    #give-now-mobile {
-        display: block;
-    }
-
-    #give-now-mobile > a {
-        margin: 30px 0px;
-        padding: 15px 20px;
-    }
-}
-@media (min-width: 912px) {
-    #give-now-mobile {
-        display: none; /* Hide inside-menu button on larger screens */
-    }
-}
-
-@media (max-width: 911px) {
-    #give-now-desktop {
-        display: none; /* Hide the standalone button on smaller screens */
-    }
-
-    #give-now-mobile {
-        display: block; /* Show inside-menu button on mobile */
+    nav ul li {
+        margin: 10px 0;
     }
 }

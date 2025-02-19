@@ -1,0 +1,42 @@
+.footer {
+    background-color: var(--gray);
+    border-top: 4px solid var(--light-blue);
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .district-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--light-blue);
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 30px; /* Adjust icon size */
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+  
+  .social-icons img {
+    width: 100%;
+    height: auto;
+  }
+  
