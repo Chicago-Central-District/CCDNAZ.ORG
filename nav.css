@@ -1,15 +1,17 @@
-/* Sticky header */
+/* Sticky Navbar (Appears in front of content) */
 header {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 15px 0;
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
     z-index: 1000;
+    padding: 0px;
+    height: auto;
 }
 
-/* Navigation container */
+
+/* Navbar Layout */
 nav {
     display: flex;
     justify-content: space-between;
@@ -19,85 +21,192 @@ nav {
     color: white;
 }
 
-/* Logo styling */
-#logos {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
+/* Logo Images */
 .nav-image {
     height: 50px;
     width: auto;
 }
 
-/* Navigation links */
+/* Navbar Links */
 nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 
-nav ul li {
-    display: inline;
-}
-
+/* Consistent Link Styling */
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.3em;
-    transition: color 0.3s ease-in-out;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: var(--light-blue);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 
-#give-now{
-    border-radius: 30px;
-    border: solid 3px white;
-    color: white;
-    padding: 10px 15px;
-}
-#give-now:hover{
-    border-radius: 30px;
-    border: solid 3px white;
-    color: white;
-    padding: 10px 15px;
-    background: rgba(255, 255, 255, 0.157);
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
 }
 
-/* Hamburger Menu */
-.hamburger {
-    display: none; /* Hidden on larger screens */
-    font-size: 2rem;
+.dropbtn {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
     cursor: pointer;
-    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-/* Responsive Navigation */
-@media screen and (max-width: 1050px) {
-    .hamburger {
-        display: block; /* Show hamburger on smaller screens */
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: black;
+    min-width: 200px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px);
+    border-radius: 8px;
+    margin-top: 0px;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+/* Dropdown Hover Effect */
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(225, 225, 225, 0.3);
+}
+
+/* Hamburger Menu (Mobile) */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-bar {
+    background-color: white;
+    height: 3px;
+    width: 30px;
+    margin: 5px 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 1250px) {
+
+    header {
+        padding: 15px 0px;
     }
 
+    /* Hide nav items by default */
     nav ul {
-        display: none; /* Hide menu by default */
-        flex-direction: column;
+        display: none;
         position: absolute;
         top: 70px;
-        right: 0;
-        background: rgba(0, 0, 0, 0.9);
+        left: 0;
         width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
         text-align: center;
-        padding: 20px 0;
-    }
-
-    nav ul.show {
-        display: flex; /* Show menu when toggled */
+        padding-top: 10px;
     }
 
     nav ul li {
-        margin: 10px 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        font-size: 1.5em;
+    }
+
+    /* Centered menu items */
+    .show-menu {
+        display: flex;
+        padding: 0px;
+    }
+
+    /* Show hamburger on mobile */
+    .hamburger-menu {
+        display: flex;
+    }
+
+    /* Dropdowns work inline for mobile */
+    .dropdown-content {
+        position: relative;
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+        margin-top: 0;
+        background: none;
+    }
+
+    .dropdown-content a {
+        font-size: 1.1rem;
+        padding: 10px 0px; /* Indentation for subpages */
+    }
+
+    /* Full-width dropdown buttons */
+    .dropbtn {
+        display: block;
+        text-align: center;
+        width: calc(100% - 30px);
+        text-align: center;
+        padding: 15px;
+        font-size: 1.5em;
+    }
+
+    /* Hover effect for mobile */
+    .dropdown-content a:hover {
+        background-color: rgba(225, 225, 225, 0.3);
+    }
+
+    .give-now {
+        margin-bottom: 20px;
     }
 }
+
+.give-now {
+    background: transparent; /* Gold or your preferred highlight color */
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border: solid 2px white;
+    width: fit-content;
+}
+
+.give-now:hover {
+    background: rgba(225, 225, 225, 0.3); /* Slightly darker gold */
+    transform: scale(1.05);
+}
+

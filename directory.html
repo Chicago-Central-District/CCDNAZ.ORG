@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCD | Churches</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="churches.css">
+    <script src="script.js" defer></script>
+    <script src="footer.js" defer></script>
+    <script src="nav.js" defer></script>
+    <script src="churches.js" defer></script>
+</head>
+<body>
+
+    <div id="navbar-goes-here"></div>
+
+
+    <section class="hero">
+        <h1>Church Directory</h1>
+    </section>
+
+
+
+    <input type="text" id="searchInput" placeholder="Search churches..." />
+
+    <div id="data-container" class="panel-container"></div>
+    <!-- Modal structure -->
+      <div id="modal" class="modal">
+          <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-address"></p>
+            <p id="modal-phone"></p>
+            <a id="modal-website" href="" target="_blank">Visit Website</a>
+          </div>
+      </div>
+    
+</body>
+</html>
