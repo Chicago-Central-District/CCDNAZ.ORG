@@ -25,6 +25,7 @@
 
 
 
+
 .desc {
     background: linear-gradient(180deg, transparent, var(--primary-blue)), url('images/texture.png'); /* Subtle gradient */
     color: var(--dark-text-blue);
