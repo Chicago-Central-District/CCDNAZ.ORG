@@ -16,8 +16,11 @@
   letter-spacing: 3px;
 }
 
-
+html{
+  overflow-x: hidden;
+}
 body {
+    position: relative;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -40,7 +43,7 @@ body {
     border-bottom-right-radius: 60% 100px;
 }
 .hero h1{
-  font-size: 5rem;
+  font-size: clamp(42px, 8vw, 5rem);
   font-weight: 800;
   text-transform: uppercase;
 }
