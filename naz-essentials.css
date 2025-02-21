@@ -1,0 +1,142 @@
+
+/* Hero Section */
+.hero {
+    background: url('images/cityscape.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    border-bottom-left-radius: 60% 100px;
+    border-bottom-right-radius: 60% 100px;
+}
+
+.hero h1 {
+    text-shadow: 
+        -2px -2px 0 var(--dark-text-blue), 
+         2px -2px 0 var(--dark-text-blue), 
+        -2px  2px 0 var(--dark-text-blue), 
+         2px  2px 0 var(--dark-text-blue);
+}
+
+
+
+
+.desc {
+    background: linear-gradient(180deg, transparent, var(--primary-blue)), url('images/texture.png'); /* Subtle gradient */
+    color: var(--dark-text-blue);
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+    word-spacing: 10px;
+}
+
+.desc strong{
+    font-weight: 1000;
+    white-space: nowrap;
+}
+
+.desc h1 {
+    font-size: clamp(32px, 8vw, 3rem);
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.desc p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 20px auto;
+    opacity: 0.9;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.desc i {
+    font-size: 2.5rem;
+}
+
+/* Decorative Divider */
+.desc::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: #007bff; /* Accent color */
+    border-radius: 2px;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.fullscreen-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax Effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background: #144975d0;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    font-weight: 550;
+}
+
+.overlay h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .overlay {
+        max-width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .overlay h2 {
+        font-size: 1.8rem;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+}

@@ -1,8 +1,8 @@
 <header>
     <nav>
         <div id="logos">
-            <img class="nav-image" src="images/logos/CCD-Logo - White (no text).png" alt="logo">
-            <img class="nav-image" src="images/logos/CCD-Logo - White (text only).png" alt="logo text">
+            <a href="index.html"><img class="nav-image" src="images/logos/CCD-Logo - White (no text).png" alt="logo"></a>
+            <a href="index.html"><img class="nav-image" src="images/logos/CCD-Logo - White (text only).png" alt="logo text"></a>
         </div>
         <div class="hamburger-menu" onclick="toggleMenu()">
             <span class="hamburger-bar"></span>
@@ -10,25 +10,33 @@
             <span class="hamburger-bar"></span>
         </div>
         <ul id="nav-links">
-            <li><a href="#about">About</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">About</a>
+                <div class="dropdown-content">
+                    <a href="staff.html">Staff</a>
+                    <a href="naz-essentials.html">Naz Essentials</a>
+                </div>
+            </li>
+            <li><a href="/ministers">Ministers</a></li>
             <li class="dropdown">
                 <a href="#" class="dropbtn">Churches</a>
                 <div class="dropdown-content">
-                    <a href="#church1">Church 1</a>
-                    <a href="#church2">Church 2</a>
-                    <a href="#church3">Church 3</a>
+                    <a href="directory.html">Church Directory</a>
+                    <a href="mission-area.html">Mission Areas</a>
+                    <a href="http://findachurch.nazarene.org/" target="_blank">Find A Church</a>
                 </div>
             </li>
             <li><a href="#events">Events</a></li>
             <li class="dropdown">
                 <a href="#" class="dropbtn">Resources</a>
                 <div class="dropdown-content">
-                    <a href="#resource1">Resource 1</a>
-                    <a href="#resource2">Resource 2</a>
+                    <a href="#resource1">Ministry Resources</a>
+                    <a href="#resource2">CCD Partners</a>
+                    <a href="https://vimeo.com/user105181668" target="_blank">CCD Resourcing Videos</a>
                 </div>
             </li>
             <li><a href="#contact">Contact</a></li>
-            <li style="display: flex; justify-content: center;" ><a href="#give" class="give-now">Give Now</a></li>
+            <li style="display: flex; justify-content: center;"><a href="#give" class="give-now">Give Now</a></li>
         </ul>
     </nav>
 </header>

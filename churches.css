@@ -30,7 +30,7 @@
 /* Church List Grid Layout */
 .panel-container {
     display: flex;
-    gap: 10px; /* Reduce spacing between panels */
+    gap: 15px; /* Reduce spacing between panels */
     padding: 30px 3%;
     justify-content: center;
     flex-wrap: wrap;
@@ -51,6 +51,22 @@
     border-bottom: 3px solid var(--dark-text-blue);
     min-height: 140px; /* Reduce height */
 }
+.panel {
+    background: white;
+    cursor: pointer;
+    border-radius: 6px;
+    width: fit-content;
+    padding: 10px 20px;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5); /* Less shadow for a compact look */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    border: 5px solid var(--dark-text-blue);
+    min-height: 140px; /* Reduce height */
+}
+
+.panel hr {
+    border: solid var(--dark-text-blue) 1px;
+}
 
 /* Hover Effect */
 .panel:hover {
@@ -60,14 +76,14 @@
 
 /* Title Styling */
 .panel-title {
-    font-size: 1.2rem; /* Smaller font to fit more */
+    font-size: 2rem; /* Smaller font to fit more */
     color: var(--dark-text-blue);
     margin-bottom: 3px;
 }
 
 /* Content Text */
 .panel-content {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     color: var(--dark-text-blue);
     margin-bottom: 3px;
 }

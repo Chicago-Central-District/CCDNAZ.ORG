@@ -18,6 +18,7 @@ fetch('churches.json')
 
       panel.innerHTML = `
         <h2 class="panel-title">${church.name}</h2>
+        <hr>
         <p class="panel-content">${church.address}</p>
         <p class="panel-content">${church.phone}</p>
         <a href="${church.website}" target="_blank">

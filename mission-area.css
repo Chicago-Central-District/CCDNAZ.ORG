@@ -1,0 +1,146 @@
+body {
+    background: var(--dark-text-blue);
+}
+.mission-areas {
+    display: grid;
+    max-width: 100%;
+    gap: 40px;
+    padding: 50px 5%;
+}
+
+.mission-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mission-card:hover {
+    transform: scale(1.02);
+}
+
+.mission-card img {
+    width: 25%;
+    border-radius: 12px;
+}
+
+.mission-text {
+    width: 50%;
+    color: var(--dark-text-blue);
+}
+
+.mission-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.mission-links {
+    margin-top: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* height: 500px; */
+    gap: 20px;
+}
+
+.mission-links a {
+    display: block;
+    color: var(--dark-text-blue);
+    /* text-decoration: none; */
+    font-weight: bold;
+    margin-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+    flex: 1 1 45%;
+    padding: 5px 5px;
+    font-weight: 850;
+    border-radius: 10px;
+    text-decoration: none;
+    /* height: fit-content; */
+    /* width: fit-content; */
+    border: solid 3px var(--dark-text-blue);
+}
+
+.mission-links a:hover {
+    color: var(--primary-blue);
+    text-decoration: underline;
+    border: solid 3px var(--primary-blue);
+}
+
+/* Styling for Team Leader Section */
+.leader-info, .leader-info .a, .leader-info .b {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.leader-info img {
+    width: 200px;
+    height: 300px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+}
+
+.leader-text h3 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--dark-text-blue);
+}
+
+.leader-text p {
+    font-size: 1.2rem;
+    margin: 5px 0 0;
+    color: var(--dark-text-blue);
+}
+
+.mission-card.reverse {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 900px) {
+    .mission-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .mission-card.reverse {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .mission-card img {
+        width: 200px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .mission-text {
+        width: 100%;
+    }
+
+    .mission-links a {
+        font-size: 1rem;
+    }
+
+    .mission-card .leader-info{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .mission-links a{
+         flex: 1 1 100%;
+    }
+}

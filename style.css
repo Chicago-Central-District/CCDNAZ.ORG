@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --primary-blue: #5A9BD5;   /* Balanced sky blue */
     --secondary-blue: #8FC1E3; /* Soft, calming blue */
     --accent-blue: #1B6CA8;    /* Richer, deeper blue for contrast */
     --dark-text-blue: #144A75; /* Strong navy for better readability */
     --soft-gray-bg: #F2F7FC;   /* Light blue-gray for subtle contrast */
+}
+
+
+* {
+  /* font-family: "Oswald", serif; */
+  /* font-family: "Bebas Neue", serif; */
+  font-family: "Raleway", Arial, sans-serif;
+  letter-spacing: 3px;
 }
 
 
@@ -27,6 +37,11 @@ body {
     font-weight: bold;
     border-bottom-left-radius: 60% 100px;
     border-bottom-right-radius: 60% 100px;
+}
+.hero h1{
+  font-size: 5rem;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 
