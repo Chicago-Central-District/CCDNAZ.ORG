@@ -14,13 +14,13 @@
     border-bottom-right-radius: 60% 100px;
 }
 
-.hero h1 {
+/* .hero h1 {
     text-shadow: 
         -2px -2px 0 var(--dark-text-blue), 
          2px -2px 0 var(--dark-text-blue), 
         -2px  2px 0 var(--dark-text-blue), 
          2px  2px 0 var(--dark-text-blue);
-}
+} */
 
 
 .container {
@@ -40,7 +40,7 @@
     background: #fff;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     display: flex;
     flex-direction: column;

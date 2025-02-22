@@ -1,31 +1,69 @@
 document.addEventListener("DOMContentLoaded", () => {
-    //Put in Navbar
-    fetch("navbar.html")
-    .then(response => response.text())
-    .then(data => {
+  addHeader();
+});
+
+function addHeader() {
+  fetch("navbar.html")
+    .then((response) => response.text())
+    .then((data) => {
       document.getElementById("navbar-goes-here").innerHTML = data;
-    });
-});
+      initDropdownContent(); // ✅ Runs after navbar is added
+      initMobileMenuClose(); // ✅ Now runs AFTER menu exists
+    })
+    .catch((error) => console.error("Error loading navbar:", error));
+}
 
+function initDropdownContent() {
+  const dropdowns = document.querySelectorAll(".dropdown");
 
+  document.addEventListener("click", function (event) {
+    const target = event.target;
+    const dropdown = target.closest(".dropdown");
 
-// Toggle the mobile menu when the hamburger icon is clicked
-document.addEventListener("DOMContentLoaded", () => {
-    // Add event listeners to toggle dropdowns on click
-    document.querySelectorAll(".dropdown > a").forEach(button => {
-      button.addEventListener("click", function (e) {
-          e.preventDefault(); // Prevent default link behavior
-
-          // Toggle the dropdown menu visibility
-          const parent = this.closest(".dropdown");
-          const dropdownContent = parent.querySelector(".dropdown-content");
-          dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+    // ✅ If clicking outside any dropdown, close all dropdowns
+    if (!dropdown) {
+      dropdowns.forEach((element) => {
+        element.classList.remove("dropdown--active");
       });
-  });
-});
+      return;
+    }
 
-// Toggle the mobile menu when the hamburger icon is clicked
+    // ✅ If clicking inside a dropdown, check if it should be toggled
+    const isClosing = dropdown.classList.contains("dropdown--active");
+
+    dropdowns.forEach((element) => {
+      element.classList.remove("dropdown--active");
+    });
+
+    // ✅ Only toggle if it was not already open
+    if (!isClosing && target.closest(".dropbtn")) {
+      dropdown.classList.add("dropdown--active");
+    }
+  });
+}
+
+// ✅ Toggle the mobile menu when the hamburger icon is clicked
 function toggleMenu() {
   var menu = document.getElementById("nav-links");
-  menu.classList.toggle("show-menu");
+  if (menu) {
+    menu.classList.toggle("show-menu");
+  }
+}
+
+// ✅ Close mobile nav when clicking outside of it
+function initMobileMenuClose() {
+  document.addEventListener("click", function (event) {
+    const menu = document.getElementById("nav-links");
+    const hamburger = document.querySelector(".hamburger"); // Ensure correct selector
+
+    // ✅ Ensure elements exist before accessing properties
+    if (!menu || !hamburger) return;
+
+    // ✅ Check if menu is open & user clicks outside
+    if (menu.classList.contains("show-menu") &&
+        !menu.contains(event.target) &&
+        !hamburger.contains(event.target)) {
+      menu.classList.remove("show-menu"); // ✅ Close menu
+    }
+  });
 }

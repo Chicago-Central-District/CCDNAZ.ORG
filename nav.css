@@ -8,53 +8,54 @@ header {
     z-index: 1000;
     padding: 0px;
     height: auto;
-}
-
-/* Navbar Layout */
-nav {
+  }
+  
+  /* Navbar Layout */
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
     margin: 0 auto;
     color: white;
-}
-
-/* Logo Images */
-.nav-image {
+  }
+  
+  /* Logo Images */
+  .nav-image {
     height: 50px;
     width: auto;
-}
-
-/* Navbar Links */
-nav ul {
+  }
+  
+  /* Navbar Links */
+  nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
     align-items: center;
-}
-
-/* Consistent Link Styling */
-nav ul li a {
+  }
+  
+  /* Consistent Link Styling */
+  nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.5em;
     padding: 10px 15px;
     display: inline-block;
     transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+  
     border-radius: 5px;
-}
-
-/* Dropdown Styling */
-.dropdown {
+  }
+  
+  nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Dropdown Styling */
+  .dropdown {
     position: relative;
-}
-
-.dropbtn {
+  }
+  
+  .dropbtn {
     font-size: 1.5em;
     color: white;
     text-decoration: none;
@@ -63,10 +64,10 @@ nav ul li a:hover {
     padding: 10px 0px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-}
-
-/* Dropdown Menu (Multiple Columns) */
-.dropdown-content {
+  }
+  
+  /* Dropdown Menu (Multiple Columns) */
+  .dropdown-content {
     display: none;
     position: absolute;
     left: 0;
@@ -76,119 +77,130 @@ nav ul li a:hover {
     z-index: 999;
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: translateY(10px);
+    transform: translateY(-10px);
+    /* SUGGESTION: translateY(-10px)*/
     border-radius: 8px;
     margin-top: 0px;
     display: grid;
-    grid-template-columns: 1fr;  /* Two columns */
-    gap: 20px;
+    grid-template-columns: 1fr; /* Two columns */
+    gap: 10px; /* EDIT: 20px -> 10px - Styling preference. */
     padding: 10px;
-}
-
-.dropdown-content a {
+  
+    pointer-events: none;
+  }
+  
+  .dropdown-content a {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     font-size: 1.2em;
     transition: background-color 0.3s ease;
-}
+  }
+  
 
-/* Dropdown Hover Effect */
-.dropdown:hover .dropdown-content {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.dropdown-content a:hover {
+  @media (min-width: 1504px) {
+    /* Dropdown Hover Effect */
+    .dropdown:hover .dropdown-content,
+    .dropdown--active .dropdown-content {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: initial;
+    }
+  }
+  
+  .dropdown-content a:hover {
     background-color: rgba(225, 225, 225, 0.3);
-}
-
-/* Hamburger Menu (Mobile) */
-.hamburger-menu {
+  }
+  
+  /* Hamburger Menu (Mobile) */
+  .hamburger-menu {
     display: none;
     flex-direction: column;
     cursor: pointer;
-}
-
-.hamburger-bar {
+  }
+  
+  .hamburger-bar {
     background-color: white;
     height: 3px;
     width: 30px;
     margin: 5px 0;
-}
-
-/* Mobile Styles */
-@media (max-width: 1504px) {
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 1504px) {
     header {
-        padding: 15px 0px;
+      padding: 15px 0px;
     }
-
+  
     nav ul {
-        display: none;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.9);
-        flex-direction: column;
-        text-align: center;
-        padding-top: 10px;
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      flex-direction: column;
+      text-align: center;
+      padding-top: 10px;
     }
-
+  
     nav ul li {
-        width: 100%;
+      width: 100%;
     }
-
+  
     nav ul li a {
-        display: block;
-        width: 100%;
-        padding: 15px 0;
-        font-size: 1.5em;
+      display: block;
+      width: 100%;
+      padding: 15px 0;
+      font-size: 1.5em;
     }
-
+  
     .show-menu {
-        display: flex;
-        padding: 0px;
+      display: flex;
+      padding: 0px;
     }
-
+  
     .hamburger-menu {
-        display: flex;
+      display: flex;
     }
-
+  
     /* Full-width dropdown on mobile */
     .dropdown-content {
-        display: none;
-        grid-template-columns: 1fr;
-        padding: 0;
-        margin: 0;
-        /* Center dropdown content */
-        position: relative;
-        top: 40px 0;
-        /* left: 50%; */
-        transform: translateY(-50%);
-        width: 100%; /* Adjust width to control the size of the dropdown */
+      grid-template-columns: 1fr;
+      padding: 0;
+      margin: 0;
+      /* Center dropdown content */
+      position: relative;
+      top: 40px 0;
+      /* left: 50%; */
+      transform: translateY(0);
+      width: 100%; /* Adjust width to control the size of the dropdown */
+      height: 0;
+      transition: none; /* EDIT: Remove transition effect on mobile. */
     }
-
-    .dropbtn:hover .dropdown-content{
-        display: block;
+  
+    .dropbtn:hover .dropdown-content,
+    .dropdown--active .dropdown-content {
+      height: initial;
+      opacity: 1;
+      pointer-events: initial;
     }
-
+  
     /* Adjust text size for mobile */
     .dropdown-content a {
-        font-size: 1.1em;
-        padding: 10px 0;
+      font-size: 1.1em;
+      padding: 10px 0;
     }
-
+  
     .give-now {
-        margin-bottom: 20px;
+      margin-bottom: 20px;
     }
-}
-
-/* Style for "Give Now" button */
-.give-now {
-    background: transparent; 
+  }
+  
+  /* Style for "Give Now" button */
+  .give-now {
+    background: transparent;
     color: white;
     font-weight: bold;
     padding: 12px 20px;
@@ -196,9 +208,10 @@ nav ul li a:hover {
     transition: background 0.3s ease, transform 0.2s ease;
     border: solid 2px white;
     width: fit-content;
-}
-
-.give-now:hover {
+  }
+  
+  .give-now:hover {
     background: rgba(225, 225, 225, 0.3);
     transform: scale(1.05);
-}
+  }
+  

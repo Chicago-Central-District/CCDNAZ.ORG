@@ -1,0 +1,107 @@
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* background-color: #e0e0e0; */
+    padding: 40px;
+  }
+  
+  .content-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #00000050;
+    background-color: var(--dark-text-blue);
+    margin: 0 20px; /* Add some space between the content and edges */
+  }
+  
+  .content-item.even {
+    flex-direction: row;
+  }
+  
+  .content-item.odd {
+    flex-direction: row-reverse;
+  }
+  
+  .content-text {
+    width: 45%;
+  }
+  
+  .content-title {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  .content-description {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.5;
+  }
+
+  .content-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white; /* Use your theme's light blue */
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .content-link:hover {
+    background-color: white;
+    transform: scale(1.1);
+    color: var(--dark-text-blue); /* White text on hover */
+  }
+  
+  .content-link:active {
+    background-color: white; /* Slightly darker blue for active state */
+    color: #fff;
+  }  
+  
+  .content-image {
+    width: 45%;
+    max-width: 500px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .content-image img {
+    width: 90%;
+    border-radius: 10px;
+    transition: transform 0.5s ease-out;
+  }
+
+  /* Add parallax effect on hover */
+.content-item:hover .content-image img {
+  transform: scale(1.1);
+}
+  
+  /* Adjusting for responsiveness */
+  @media (max-width: 965px) {
+    .content-item.odd, .content-item.even {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  
+    .content-text, .content-image {
+      width: 100%;
+    }
+  
+    .content-item {
+      margin: 0 10px; /* Adjust spacing on small screens */
+    }
+  }

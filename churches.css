@@ -18,13 +18,13 @@
     outline: none;
 }
 
-.hero h1 {
+/* .hero h1 {
     text-shadow: 
         -2px -2px 0 var(--dark-text-blue), 
          2px -2px 0 var(--dark-text-blue), 
         -2px  2px 0 var(--dark-text-blue), 
          2px  2px 0 var(--dark-text-blue);
-}
+} */
 
 
 /* Church List Grid Layout */

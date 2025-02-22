@@ -1,0 +1,134 @@
+.steps-page {
+    background: var(--soft-gray-bg);
+    color: var(--dark-text-blue);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.steps-page .container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.steps-page h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.steps-page .intro {
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+    color: #555;
+}
+
+.steps-page .intro a, .steps-page p a {
+    color: var(--dark-text-blue);
+    text-decoration: underline;
+}
+
+.steps-page .intro a:hover, .steps-page p a:hover {
+    color: var(--primary-blue);
+    text-decoration: underline;
+}
+
+.steps-page .intro a:visited, .steps-page p a:visited {
+    color: var(--dark-text-blue);
+    text-decoration: underline;
+}
+
+.steps-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: left;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: var(--soft-gray-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+}
+
+.step-number {
+    font-size: 2rem;
+    font-weight: bold;
+    background: var(--dark-text-blue);
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    min-width: 60px;
+    text-align: center;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h2 {
+    font-size: 1.5rem;
+    color: var(--dark-text-blue);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.step-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.step-content ul {
+    margin: 40px 0px;
+    padding-left: 60px;
+}
+
+.step-content ul li {
+    font-size: 1.1rem;
+    margin: 20px 0px;
+}
+
+.step-content ul li a {
+    color: var(--dark-text-blue);
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid var(--dark-text-blue);
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.step-content ul li a:hover {
+    color: var(--primary-blue);
+    border-bottom: 2px solid #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .step {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .step-number {
+        font-size: 1.8rem;
+        padding: 12px 18px;
+    }
+}

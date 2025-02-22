@@ -1,0 +1,229 @@
+/* Section Styling */
+.text-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content Box */
+.text-container {
+    max-width: 1200px;
+    background: white;
+    padding: 40px;
+    border-left: 5px solid var(--dark-text-blue); /* Subtle dimension */
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8); /* Soft shadow */
+    text-align: left;
+}
+
+/* Text Styling */
+.text-container p {
+    font-size: 18px;
+    color: var(--dark-text-blue);
+    line-height: 1.6;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: var(--dark-text-blue);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #004080;
+}
+/* Highlighted Text */
+span {
+    font-size: 2rem;
+    font-weight: normal;
+    color: var(--dark-text-blue);
+    display: block; /* Moves it to a new line for more impact */
+    margin-top: 10px;
+}
+
+
+
+
+
+
+.four-cs {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.intro {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    color: var(--dark-text-blue);
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    margin: 60px 0px;
+}
+
+.c-category {
+    display: grid;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
+}
+
+.c-category div {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.c-category div:hover {
+    transform: translateY(-5px);
+}
+
+.c-category img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.c-category h3 {
+    font-size: 2rem;
+    margin: 15px 0 10px;
+    color: var(--dark-text-blue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.c-category p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Medium screens (Tablets) - 2 columns (2x2) */
+@media (max-width: 992px) {
+    .c-category {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small screens (Phones) - 1 column (1x4) */
+@media (max-width: 600px) {
+    .c-category {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+.lifelong-learning {
+    background: var(--light-gray);
+    padding: 60px 20px;
+    text-align: left;
+}
+
+.learning-content {
+    max-width: 1200px;
+    margin: auto;
+    color: var(--dark-text-blue);
+}
+
+.learning-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.learning-content h3 {
+    font-size: 2rem;
+    margin-top: 30px;
+    color: var(--dark-text-blue);
+}
+
+.learning-content p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.learning-content a {
+    color: var(--dark-text-blue);
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.learning-content a:hover {
+    color: var(--primary-blue);
+}
+
+
+
+
+
+
+
+
+
+.enrollment-instructions {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.instructions-content {
+    max-width: 800px;
+    margin: auto;
+    color: var(--dark-text-blue);
+}
+
+.instructions-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.instructions-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.instructions-content .btn {
+    display: inline-block;
+    background-color: var(--dark-text-blue);
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.instructions-content .btn:hover {
+    background-color: var(--primary-blue);
+}
