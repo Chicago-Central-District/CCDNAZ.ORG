@@ -1,3 +1,8 @@
+body {
+    background: url('images/gradient.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 /* Hero Section */
 .hero {
@@ -25,7 +30,7 @@
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 40px auto;
     padding: 20px;
 }
