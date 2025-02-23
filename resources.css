@@ -1,5 +1,6 @@
 .hero {
     border-radius: 0%;
+    border-bottom: solid 10px white;
 }
 
 /* Container for links */
@@ -160,7 +161,7 @@ hr {
     position: relative;
     left: 0px;
     width: calc(100vw - 40px);
-    height: 80vh; /* Adjust height as needed */
+    height: 100vh; /* Adjust height as needed */
     display: flex;
     justify-content: center;
     align-items: center;

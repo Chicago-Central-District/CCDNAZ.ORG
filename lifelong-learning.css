@@ -57,18 +57,26 @@ span {
 
 .four-cs {
     text-align: center;
-    padding: 60px 20px;
+    margin-top: 60px;
+    padding: 0px 20px 60px 20px;
+    background-color: var(--dark-text-blue);
 }
 
 .intro {
     max-width: 1200px;
     margin: 0 auto 40px;
-    color: var(--dark-text-blue);
+    color: white;
 }
 
 .intro h2 {
+    position: relative;
+    background-color: var(--dark-text-blue);
     font-size: 2.5rem;
+    padding: 10px 20px;
     margin-bottom: 40px;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    left: 50%;
     font-weight: bold;
 }
 
