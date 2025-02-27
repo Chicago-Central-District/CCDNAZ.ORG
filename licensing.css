@@ -6,7 +6,7 @@
 }
 
 .steps-page .container {
-    max-width: 1000px;
+    max-width: 1600px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -54,6 +54,7 @@
     display: flex;
     align-items: flex-start;
     gap: 20px;
+    width: 100%;
     background: var(--soft-gray-bg);
     padding: 20px;
     border-radius: 8px;
@@ -131,4 +132,10 @@
         font-size: 1.8rem;
         padding: 12px 18px;
     }
+}
+
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
 }

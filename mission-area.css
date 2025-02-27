@@ -37,6 +37,7 @@ body {
 .mission-text h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .mission-links {
