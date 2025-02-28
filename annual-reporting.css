@@ -113,3 +113,77 @@
         padding-bottom: 10px;
     }
 }
+
+
+body {background-color: var(--dark-text-blue);}
+
+.link-grid {
+    background-color: var(--dark-text-blue);
+    padding: 50px 5%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: solid white 5px;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+/* Flex items (Links & Images) */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+    text-align: center;
+    width: 300px;  /* Fixed width for consistency */
+    height: 300px; /* Fixed height for uniformity */
+}
+
+/* Image Styling */
+.with-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover; /* Ensures images maintain aspect ratio without stretching */
+}
+
+/* Hover Effects */
+.grid-item:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .flex-item {
+        width: 90%;
+        height: auto;
+    }
+
+    .with-image {
+        /* width: 90%; */
+        height: auto;
+    }
+}

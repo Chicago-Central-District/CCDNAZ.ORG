@@ -1,7 +1,7 @@
 .steps-page {
     background: var(--soft-gray-bg);
     color: var(--dark-text-blue);
-    padding: 80px 20px;
+    padding: 0px 20px;
     text-align: center;
 }
 
@@ -17,17 +17,31 @@
 .steps-page h1 {
     font-size: 2.8rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    width: 100%;
+    /* background: var(--dark-text-blue); */
+    padding: 20px;
+}
+
+.steps-page h1:nth-child(3) {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: -30px;
+    width: 100vw;
+    color: white;
+    background: var(--dark-text-blue);
+    padding: 50px 0px;
 }
 
 .steps-page .intro {
     font-size: 1.5rem;
+    margin-top: 0px;
     margin-bottom: 60px;
-    color: #555;
+    color: #333;
 }
 
 .steps-page .intro a, .steps-page p a {
-    color: var(--dark-text-blue);
+    color: var(--dark-text-blues);
     text-decoration: underline;
 }
 
@@ -37,7 +51,7 @@
 }
 
 .steps-page .intro a:visited, .steps-page p a:visited {
-    color: var(--dark-text-blue);
+    color: white;
     text-decoration: underline;
 }
 
@@ -48,18 +62,21 @@
     justify-content: center;
     gap: 30px;
     text-align: left;
+    margin: 0px 20px;
 }
 
 .step {
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    width: 100%;
-    background: var(--soft-gray-bg);
+    width: 80%;
+    background: var(--dark-text-blue);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
     transition: transform 0.3s ease-in-out;
+    border: solid 1px var(--dark-text-blue);
+
 }
 
 .step:hover {
@@ -69,11 +86,11 @@
 .step-number {
     font-size: 2rem;
     font-weight: bold;
-    background: var(--dark-text-blue);
-    color: white;
+    background: white;
+    color: var(--dark-text-blue);
     padding: 15px;
     border-radius: 50%;
-    min-width: 60px;
+    min-width: 40px;
     text-align: center;
 }
 
@@ -83,14 +100,14 @@
 
 .step-content h2 {
     font-size: 1.5rem;
-    color: var(--dark-text-blue);
+    color: white;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 
 .step-content p {
     font-size: 1.2rem;
-    color: #555;
+    color: var(--soft-gray-bg);
     margin-bottom: 10px;
 }
 
@@ -102,19 +119,20 @@
 .step-content ul li {
     font-size: 1.1rem;
     margin: 20px 0px;
+    color: white;
 }
 
 .step-content ul li a {
-    color: var(--dark-text-blue);
+    color: white;
     font-weight: bold;
     text-decoration: none;
-    border-bottom: 2px solid var(--dark-text-blue);
+    border-bottom: 2px solid white;
     transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
 }
 
 .step-content ul li a:hover {
     color: var(--primary-blue);
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid var(--primary-blue);
 }
 
 /* Responsive Design */
@@ -138,4 +156,33 @@
 h2{
     font-size: 2rem;
     margin-bottom: 10px;
+}
+
+
+.section-header {
+    min-width: 100vw;
+    height: 550px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.section-header h2 {
+    font-size: 4rem;
+}
+
+/* Responsive scaling */
+@media (max-width: 768px) {
+    .section-header {
+        height: 380px; /* Slightly shorter on mobile */
+        font-size: 1.5rem;
+    }
 }

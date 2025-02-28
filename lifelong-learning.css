@@ -199,16 +199,22 @@ span {
 .enrollment-instructions {
     padding: 40px 20px;
     text-align: center;
+    background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/lifelong-learning/Training-class-pic.jpg'), 
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
 }
 
 .instructions-content {
     max-width: 800px;
     margin: auto;
-    color: var(--dark-text-blue);
+    color: white;
 }
 
 .instructions-content h2 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     margin-bottom: 20px;
     font-weight: bold;
 }
@@ -216,7 +222,7 @@ span {
 .instructions-content p {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #444;
+    color: white;
     line-height: 1.6;
 }
 
