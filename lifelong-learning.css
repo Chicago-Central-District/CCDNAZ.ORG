@@ -78,6 +78,7 @@ span {
     width: fit-content;
     left: 50%;
     font-weight: bold;
+    box-shadow: 2px 2px 3px #333, -2px 2px 3px #333;
 }
 
 .intro p {

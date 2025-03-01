@@ -1,6 +1,12 @@
+body {
+    background: url('images/white-gradient.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 /* Overall Page Styling */
 .events-page {
-    background: var(--soft-gray-bg);
+    /* background: var(--soft-gray-bg); */
     color: var(--dark-text-blue);
     padding: 20px;
     text-align: center;
@@ -58,7 +64,7 @@
     background: white;
     padding: 30px;
     border-radius: 16px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     width: 90%;
     max-width: 2200px;
     opacity: 0;

@@ -6,6 +6,12 @@
     --soft-gray-bg: #F2F7FC;   /* Light blue-gray for subtle contrast */
 }
 
+body {
+    background: url('images/white-gradient.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 #searchInput {
     width: 100%;
     max-width: 400px;

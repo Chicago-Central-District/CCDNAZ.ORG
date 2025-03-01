@@ -1,3 +1,9 @@
+body {
+  background: url('images/white-gradient.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .content-container {
     display: flex;
     flex-direction: column;

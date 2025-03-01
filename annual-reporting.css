@@ -115,10 +115,14 @@
 }
 
 
-body {background-color: var(--dark-text-blue);}
+body {
+    background: url('images/white-gradient.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 .link-grid {
-    background-color: var(--dark-text-blue);
+    /* background-color: var(--dark-text-blue); */
     padding: 50px 5%;
     text-align: center;
     display: flex;
@@ -132,7 +136,7 @@ body {background-color: var(--dark-text-blue);}
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: auto;
     gap: 20px;
 }
@@ -143,7 +147,7 @@ body {background-color: var(--dark-text-blue);}
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
+    background: #144975d5;
     padding: 20px;
     border-radius: 10px;
     text-decoration: none;
@@ -152,14 +156,14 @@ body {background-color: var(--dark-text-blue);}
     font-weight: bold;
     transition: transform 0.3s ease, background 0.3s ease;
     text-align: center;
-    width: 300px;  /* Fixed width for consistency */
-    height: 300px; /* Fixed height for uniformity */
+    width: 220px;  /* Fixed width for consistency */
+    height: 220px; /* Fixed height for uniformity */
 }
 
 /* Image Styling */
 .with-image {
-    width: 300px;
-    height: 300px;
+    width: 220px;
+    height: 220px;
     border-radius: 8px;
     object-fit: cover; /* Ensures images maintain aspect ratio without stretching */
 }
@@ -168,6 +172,7 @@ body {background-color: var(--dark-text-blue);}
 .grid-item:hover {
     transform: scale(1.05);
     background: rgba(255, 255, 255, 0.2);
+    color: var(--dark-text-blue);
 }
 
 /* Responsive Adjustments */
