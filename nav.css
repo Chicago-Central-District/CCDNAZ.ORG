@@ -6,13 +6,15 @@ header {
     width: 100vw;
     z-index: 1000;
     padding: 10px 0px;
+    background: rgba(0, 0, 0, 0.8);
     height: auto;
     transition: height 0.3s ease-in-out, background 0.3s ease-in-out;
+    text-transform: uppercase;
   }
 
   header.scrolled {
     background: rgba(0, 0, 0, 0.8);
-    padding: 0px;
+    padding: 10px 0px;
   }
 
   header.scrolled .nav-image {
@@ -31,7 +33,7 @@ header {
   
   /* Logo Images */
   .nav-image {
-    height: 100px;
+    height: 50px;
     width: auto;
     transition: height 0.3s ease-in-out, background 0.3s ease-in-out;
   }

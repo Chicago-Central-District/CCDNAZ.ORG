@@ -1,0 +1,133 @@
+body {
+    background: url('images/gradient.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/cityscape.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    border-bottom-left-radius: 60% 100px;
+    border-bottom-right-radius: 60% 100px;
+}
+
+/* .hero h1 {
+    text-shadow: 
+        -2px -2px 0 var(--dark-text-blue), 
+         2px -2px 0 var(--dark-text-blue), 
+        -2px  2px 0 var(--dark-text-blue), 
+         2px  2px 0 var(--dark-text-blue);
+} */
+
+
+.container {
+    width: 90%;
+    max-width: 1600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.staff-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.staff-member {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Make the image float for small screens */
+.staff-member img {
+    width: 250px;
+    height: 350px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin: 0 15px 10px 0;
+    float: left;
+}
+
+.staff-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--dark-text-blue);
+}
+
+.staff-title {
+    font-size: 1.4rem;
+    color: var(--dark-text-blue);
+    margin-bottom: 10px;
+}
+
+.staff-description {
+    font-size: 1rem;
+    color: var(--dark-text-blue);
+}
+
+.staff-text a {
+    background: var(--dark-text-blue);
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 12px;
+}
+
+.staff-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Responsive for larger screens */
+@media (min-width: 900px) {
+    .staff-member {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        padding: 30px;
+    }
+
+    .staff-member img {
+        width: 450px;
+        height: 450px;
+        margin: 0 20px 0 0;
+    }
+
+    /* Alternate sides */
+    .staff-member:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .staff-member:nth-child(even) img {
+        margin: 0 0 0 20px;
+    }
+
+    .staff-text a {
+        background: var(--dark-text-blue);
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        border-radius: 12px;
+    }
+}

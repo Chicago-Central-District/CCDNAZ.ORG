@@ -1,133 +1,86 @@
-body {
-    background: url('images/gradient.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-}
+.team-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+  }
 
-/* Hero Section */
-.hero {
-    background: url('images/cityscape.jpg') no-repeat center center/cover;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    font-size: 2.5em;
-    font-weight: bold;
-    border-bottom-left-radius: 60% 100px;
-    border-bottom-right-radius: 60% 100px;
-}
-
-/* .hero h1 {
-    text-shadow: 
-        -2px -2px 0 var(--dark-text-blue), 
-         2px -2px 0 var(--dark-text-blue), 
-        -2px  2px 0 var(--dark-text-blue), 
-         2px  2px 0 var(--dark-text-blue);
-} */
-
-
-.container {
-    width: 90%;
-    max-width: 1600px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-.staff-section {
+  .container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-}
-
-.staff-member {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Make the image float for small screens */
-.staff-member img {
-    width: 250px;
-    height: 350px;
-    border-radius: 12px;
-    object-fit: cover;
-    margin: 0 15px 10px 0;
-    float: left;
-}
-
-.staff-name {
+  }
+  
+  .section-title {
     font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
     font-weight: bold;
     color: var(--dark-text-blue);
-}
-
-.staff-title {
-    font-size: 1.4rem;
-    color: var(--dark-text-blue);
-    margin-bottom: 10px;
-}
-
-.staff-description {
-    font-size: 1rem;
-    color: var(--dark-text-blue);
-}
-
-.staff-text a {
-    background: var(--dark-text-blue);
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-    border-radius: 12px;
-}
-
-.staff-text {
+    text-transform: uppercase;
+  }
+  
+  /* .team-group {
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-}
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+  } */
 
-/* Responsive for larger screens */
-@media (min-width: 900px) {
-    .staff-member {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: left;
-        padding: 30px;
-    }
+  .row, .team-group .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  
+  .team-member {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    /* background-color: white; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* border-radius: 10px; */
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+    width: 300px;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-10px);
+  }
+  
+  .team-img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
 
-    .staff-member img {
-        width: 450px;
-        height: 450px;
-        margin: 0 20px 0 0;
-    }
+  }
+  
+  .team-info {
+    padding: 0px;
+    text-align: left;
+    width: inherit;
+  }
 
-    /* Alternate sides */
-    .staff-member:nth-child(even) {
-        flex-direction: row-reverse;
-    }
+  .team-info h3 {
+    margin: 5px 0px;
+    color: var(--dark-text-blue);
+    font-size: 1.3rem
+  }
 
-    .staff-member:nth-child(even) img {
-        margin: 0 0 0 20px;
+  .team-info p {
+    margin: 5px 0px;
+    color: #333;
+    font-size: 1rem
+  }
+  
+  
+  @media (min-width: 992px) {
+    .team-member {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-
-    .staff-text a {
-        background: var(--dark-text-blue);
-        padding: 10px 20px;
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1.2rem;
-        border-radius: 12px;
-    }
-}
+  }
+  
