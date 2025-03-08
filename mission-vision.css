@@ -1,0 +1,120 @@
+.mission-vision-section {
+    color: var(--dark-text-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 40px 0px;
+  }
+  
+  .mission-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1400px;
+    width: 100%;
+  }
+  
+  .mission, .vision {
+    flex: 1;
+    min-width: 250px;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+    box-shadow: 0px 0px 10px var(--dark-text-blue);
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h2 {
+    font-size: 2.25em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  p {
+    font-size: 1.5em;
+    line-height: 1.5;
+  }
+  
+
+
+
+  .missional-priorities {
+    background: linear-gradient(to top, #00000080, #00000080), url('images/river-6175173_1280.jpg') no-repeat top center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    /* background: var(--dark-text-blue); */
+    color: white;
+    padding: 60px 10%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .missional-priorities h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .priorities-container {
+      display: flex;
+      /* flex-wrap: wrap; */
+      gap: 20px;
+    }
+    
+  .priority {
+    flex: 1 1 30%;
+    background: rgba(255, 255, 255, 0.83);
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--dark-text-blue);
+  }
+  
+  .priority h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .priority p {
+    font-size: 1.1em;
+    line-height: 1.5;
+  }
+  
+  .priority:hover {
+    transform: translateY(-5px);
+    /* background: rgba(255, 255, 255, 0.2); */
+  }
+  
+  @media (max-width: 850px) {
+    .priorities-container {
+        flex-direction: column;
+    }
+  }

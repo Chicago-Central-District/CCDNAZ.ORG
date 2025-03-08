@@ -52,6 +52,78 @@ body {
 
 
 
+
+.mission-section {
+  visibility: hidden;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.mission-section.in-view {
+  visibility: visible;
+  transition: fade 15s ease;
+}
+
+.mission-content {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.mission-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--dark-text-blue);
+  text-transform: uppercase;
+}
+
+.mission-section p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.mission-buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  text-transform: uppercase;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: var(--dark-text-blue); /* Blue button */
+  color: white;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #144975ca; /* Darker blue on hover */
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 910px) {
+  .mission-buttons {
+    flex-direction: column;
+  }
+}
+
+
+
+
 /* Mission & Vision */
 .mission-vision {
     background: linear-gradient(to top, #00000080, #00000080), url('images/river-6175173_1280.jpg') no-repeat top center;
