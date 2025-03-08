@@ -1,3 +1,68 @@
+.support-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    display: flex;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .support-section .container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    justify-content: space-between;
+    /* width: 300px; */
+  }
+ 
+  .support-section h2 span {
+    color: #333;
+    font-size: 1.5rem;
+  }
+
+  .support-section .container h2 {
+    font-size: 2rem;
+    color: var(--dark-text-blue);
+    text-transform: uppercase;
+    margin: 0px;
+  }
+  
+  .support-section .container p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #333;
+    margin: 0px;
+  }
+  
+  .contact-options .btn{
+    background-color: var(--dark-text-blue);
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    width: calc(100% - 40px);
+    font-size: 1.2rem;
+  }
+
+
+
+  .parallax {
+    background-image: url('images/office-925806_1920.jpg');
+    height: 40vh; /* Adjust the height as needed */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30% 30% 20% 60% / 40% 10% 20% 20%;
+    margin-bottom: 50px;
+  }
+  
+
 
 
 
@@ -63,7 +128,7 @@
 }
 
 /* Medium screens: Switch to 2x4 layout */
-@media (max-width: 1204px) {
+@media (max-width: 1224px) {
     .resource-category {
         flex: 1 1 calc(50% - 50px); /* 2 items per row with gap */
     }
@@ -76,5 +141,8 @@
 @media (max-width: 600px) {
     .resource-category {
         flex: 1 1 100%; /* 1 item per row */
+    }
+    .support-section {
+        flex-direction: column;
     }
 }
