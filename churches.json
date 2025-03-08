@@ -1,551 +1,629 @@
 {
     "churches": [
-      {
-        "name": "Autumn Fields",
-        "address": "1629 King St, Tilton, IL 61833",
-        "phone": "(217) 260-1645",
-        "website": "",
-        "mission_area": "s"
-      },
-      {
-        "name": "Beyond the Goal Ministries",
-        "address": "590 Turnberry Dr. Bourbonnais IL 60914",
-        "phone": "815-953-0414",
-        "website": "",
-        "mission_area": "ce"
-      },
-      {
-        "name": "Blue Island Spanish",
-        "address": "12815 Gregory St. Blue Island IL 60406",
-        "phone": "708-396-1617",
-        "website": "",
-        "mission_area": "h/l"
-      },
-      {
-        "name": "Bradley First",
-        "address": "195 N. Douglas Ave. Bradley IL 60915",
-        "phone": "815-954-7187",
-        "website": "bradleynaz.com",
-        "mission_area": "ce"
-      },
-      {
-        "name": "Casa de Oracíon",
-        "address": "12N101 Berner Dr. Elgin IL 60120",
-        "phone": "847-888-3795",
-        "website": "",
-        "mission_area": "h/l"
-      },
-      {
-        "name": "Celebrate Recovery - TK",
-        "address": "12725 Bell Rd. Lemont IL 60439",
-        "phone": "708-349-0454",
-        "website": "",
-        "mission_area": "n/nw"
-      },
-      {
-        "name": "Chicago Calvary",
-        "address": "5536 131st St. Crestwood IL 60445",
-        "phone": "708-597-6122",
-        "website": "calvaryfriends.org",
-        "mission_area": "s/sw"
-      },
-      {
-        "name": "Chicago Emanuel Spanish",
-        "address": "4232 N. California Ave. Chicago IL 60618",
-        "phone": "773-844-4061",
-        "website": "",
-        "mission_area": "h/l"
-      },
-      {
-        "name": "Chicago First",
-        "address": "12725 Bell Rd. Lemont IL 60439",
-        "phone": "708-349-0454",
-        "website": "c1naz.org",
-        "mission_area": "n/nw"
-      },
-      {
-        "name": "Chicago First Korean",
-        "address": "1435 W. Wise Rd. Schaumburg IL 60193",
-        "phone": "630-529-2345",
-        "website": "",
-        "mission_area": "m"
-      },
-      {
-        "name": "Chicago First Spanish",
-        "address": "3909 W. North Ave. Chicago IL 60647-4617",
-        "phone": "773-862-8734",
-        "website": "",
-        "mission_area": "h/l"
-      },
-      {
-        "name": "Chicago Gage Park",
-        "address": "2806 West 59th Street Chicago IL 60629",
-        "phone": "773-306-2170",
-        "website": "",
-        "mission_area": "h/l"
-      },
-      {
-        "name": "Chicago Heights",
-        "address": "699 8th St. Chicago Heights IL 60411",
-        "phone": "708-481-3210",
-        "website": "chicagonaz.com",
-        "mission_area": "s/sw"
-      },
-      {
-        "name": "Chicago Northside",
-        "address": "1900 W. Leland Ave. Chicago IL 60640",
-        "phone": "330-716-7519",
-        "website": "chicagonaz.org",
-        "mission_area": "c"
-      },
-      {
-        "name": "Chicago Oak Lawn Arabic",
-        "address": "5536 131st St. Crestwood IL 60445",
-        "phone": "773-517-9304",
-        "website": "",
-        "mission_area": "m"
-      },
-      {
-        "name": "Chicago Southside Arabic",
-        "address": "15500 S. 73rd Ave. Orland Park IL 60462",
-        "phone": "708-532-6100",
-        "website": "",
-        "mission_area": "m"
-      },
-      {
-        "name": "Chicago Summit Spanish",
-        "address": "7401 W. 63rd St. Summit IL 60501",
-        "phone": "773-829-1574",
-        "website": "",
-        "mission_area": "h/l"
-      },
-      {
-        "name": "Chicago Uptown Vietnamese",
-        "address": "1900 W. Leland Ave. Chicago IL 60640",
-        "phone": "773-603-9449",
-        "website": "vietnazarene.wordpress.com",
-        "mission_area": "m"
-      },
-      {
-        "name": "College Church University Avenue",
-        "address": "200 University Ave. Bourbonnais IL 60914",
-        "phone": "815-933-7749",
-        "website": "collegechurch.org",
-        "mission_area": "ce"
-      },
-      {
-        "name": "Community Cup",
-        "address": "900 W. Jeffery St., Kankakee, IL 60901",
-        "phone": "815-370-6663",
-        "website": "communitycupbbk.org",
-        "mission_area": "ce"
-      },
-      {
-        "name": "Cornerstone Bible",
-        "address": "120 N. Main St. South Elgin IL 60177",
-        "phone": "224-353-1350",
-        "website": "cbcnazarene.org",
-        "mission_area": "m"
-      },
-      {
-        "name": "Cristo la Unica Esperanza",
-        "address": "32475 Alleghany Rd. Grayslake IL 60030",
-        "phone": "262-716-3912",
-        "website": "",
-        "mission_area": "h/l"
-      },
-      {
-        "name": "Cross Creation Sports Academy",
-        "address": "16101 Reynolds St, Bennington, NE 68007",
-        "phone": "(309) 824-3887",
-        "website": "",
-        "mission_area": "ce"
-      },
-      {
-        "name": "CrossROADS",
-        "address": "322 Forest Blvd, Park Forest, IL 60466",
-        "phone": "(708) 390-9034",
-        "website": "",
-        "mission_area": "s/sw"
-      },
-      {
-        "name": "Danville First",
-        "address": "2212 N. Vermillion St. Danville IL 61832",
-        "phone": "217-442-8316",
-        "website": "danvillefirstnaz.com",
-        "mission_area": "s"
-      },
-      {
-        "name": "Danville Prison Ministries",
-        "address": "3820 E. Main St. Danville IL 61834",
-        "phone": "217-775-7595",
-        "website": "",
-        "mission_area": "s"
-      },
-      {
-        "name": "Danville Westside",
-        "address": "403 Vance Ln. Danville IL 61832",
-        "phone": "217-446-0552",
-        "website": "",
-        "mission_area": "s"
-      },
-      {
-        "name": "Ebenezer",
-        "address": "1501 S. Linneman Rd. Mount Prospect IL 60056",
-        "phone": "847-437-6335",
-        "website": "",
-        "mission_area": "h/l"
-      },
-      {
-        "name": "El Taller Iglesia Del Nazareno",
-        "address": "3132 N. McAree, Waukegan, IL 60087",
-        "phone": "312-404-0678",
-        "website": "",
-        "mission_area": "h/l"
-      },
-      {
-        "name": "El Shaddai",
-        "address": "4256 N. Oriole Ave., Norridge, IL 60706",
-        "phone": "(773) 217-6952",
-        "website": "",
-        "mission_area": "h/l"
-      },
-      {
-        "name": "Emmaus Road Gathering",
-        "address": "PO Box 479, Herscher, IL 60941",
-        "phone": "",
-        "website": "",
-        "mission_area": "ce"
-      },
-      {
-        "name": "GatheringPoint",
-        "address": "897 W. Bourbonnais Pkwy. Bourbonnais IL 60914",
-        "phone": "815-401-7700",
-        "website": "gatheringpoint.church",
-        "mission_area": "ce"
-      },
-      {
-        "name": "Good News First Haitian",
-        "address": "1900 W. Leland Avenue Chicago, IL 60640",
-        "phone": "",
-        "website": "",
-        "mission_area": "c"
-      },
-      {
-        "name": "Grace Community",
-        "address": "1629 King St. Tilton IL 61833",
-        "phone": "217-446-7876",
-        "website": "representgrace.com",
-        "mission_area": "s"
-      },
-      {
-        "name": "Greater New Testament",
-        "address": "12815 Gregory St. Blue Island IL 60406",
-        "phone": "708-662-0012",
-        "website": "",
-        "mission_area": "s/sw"
-      },
-      {
-        "name": "Hoopeston Community",
-        "address": "402 E. Honeywell Ave. Hoopeston IL 60942",
-        "phone": "217-283-9771",
-        "website": "hoopnaz.org",
-        "mission_area": "s"
-      },
-      {
-        "name": "Hope (Naperville)",
-        "address": "1451 Raymond Dr, Naperville, IL 60563",
-        "phone": "(847) 345-2082",
-        "website": "",
-        "mission_area": "n/nw"
-      },
-      {
-        "name": "HOPE (Danville)",
-        "address": "12659 E. 2100 North Rd. Danville IL 61834",
-        "phone": "217-442-8909",
-        "website": "cedargrovenaz.com",
-        "mission_area": "s"
-      },
-      {
-        "name": "House of Prayer Ministries",
-        "address": "480 Lakewood Blvd. Park Forest IL 60466",
-        "phone": "708-283-9700",
-        "website": "",
-        "mission_area": "s/sw"
-      },
-      {
-        "name": "IGLESIA DEL NAZARENO FUENTE DE VIDA",
-        "address": "155 Deerfield Road, Deerfield, IL 60015",
-        "phone": "847-922-6446",
-        "website": "",
-        "mission_area": "h/l"
-      },
-      {
-        "name": "Immanuel Senior Residence",
-        "address": "1629 King St., Tilton, IL 61833",
-        "phone": "(217) 446-7876",
-        "website": "",
-        "mission_area": "s"
-      },
-      {
-        "name": "Joliet Crystal Lawns",
-        "address": "2424 Caton Farm Rd. Joliet IL 60435",
-        "phone": "815-436-3380",
-        "website": "clnaz.org",
-        "mission_area": "s/sw"
-      },
-      {
-        "name": "Kankakee Eastridge",
-        "address": "2679 E. Court St. Kankakee IL 60901",
-        "phone": "815-932-9413",
-        "website": "eastridgenaz.org",
-        "mission_area": "ce"
-      },
-      {
-        "name": "Kankakee First",
-        "address": "1000 N. Entrance Ave. Kankakee IL 60901",
-        "phone": "815-933-1000",
-        "website": "k1naz.org",
-        "mission_area": "ce"
-      },
-      {
-        "name": "Kankakee Salvage Yard Biker",
-        "address": "200 University Ave. Bourbonnais IL 60914",
-        "phone": "815-939-1545",
-        "website": "",
-        "mission_area": "ce"
-      },
-      {
-        "name": "Kempton",
-        "address": "105 E. Main St. Kempton IL 60946",
-        "phone": "815-253-6250",
-        "website": "",
-        "mission_area": "ce"
-      },
-      {
-        "name": "Lighthouse Community",
-        "address": "17500 Lighthouse Ln. Lansing IL 60438",
-        "phone": "708-474-9045",
-        "website": "MyLC.church",
-        "mission_area": "s/sw"
-      },
-      {
-        "name": "Limestone Community",
-        "address": "863 N. 5000 W. Rd. Kankakee IL 60901",
-        "phone": "815-263-4090",
-        "website": "",
-        "mission_area": "ce"
-      },
-      {
-        "name": "Lombard",
-        "address": "536 N. Route 53 Lombard IL 60148",
-        "phone": "630-627-9444",
-        "website": "lombardchurch.org",
-        "mission_area": "n/nw"
-      },
-      {
-        "name": "Manteno",
-        "address": "698 N. Locust St. Manteno IL 60950",
-        "phone": "815-468-8946",
-        "website": "mantenonazarene.org",
-        "mission_area": "ce"
-      },
-      {
-        "name": "Milford",
-        "address": "20 S. Axtel Ave. Milford IL 60953",
-        "phone": "217-249-2814",
-        "website": "",
-        "mission_area": "s"
-      },
-      {
-        "name": "Mundelein",
-        "address": "1515 W. Maple Ave. Rte. 176 Mundelein IL 60060",
-        "phone": "847-345-5549",
-        "website": "mundeleinnaz.org",
-        "mission_area": "n/nw"
-      },
-      {
-        "name": "Mundelein Spanish",
-        "address": "1515 W. Maple Ave. Mundelein IL 60060",
-        "phone": "847-219-3694",
-        "website": "",
-        "mission_area": "h/l"
-      },
-      {
-        "name": "Naperville Trinity",
-        "address": "1451 Raymond Dr. Naperville IL 60563",
-        "phone": "630-778-0328",
-        "website": "trinitynazarene.org",
-        "mission_area": "n/nw"
-      },
-      {
-        "name": "NAPERVILLE TRINITY - CR Dupage County Jail",
-        "address": "1451 Raymond Dr. Naperville IL 60563",
-        "phone": "630-778-0328",
-        "website": "",
-        "mission_area": "n/nw"
-      },
-      {
-        "name": "New Future Mongolian",
-        "address": "536 N. Route 53 Lombard IL 60148",
-        "phone": "331-771-1127",
-        "website": "",
-        "mission_area": "m"
-      },
-      {
-        "name": "North Chicago",
-        "address": "2044 Seymour Ave. North Chicago IL 60064",
-        "phone": "773-931-8025",
-        "website": "",
-        "mission_area": "h/l"
-      },
-      {
-        "name": "Northshore",
-        "address": "545 Woodlawn Ave, Glencoe, IL 60022",
-        "phone": "615-415-0994",
-        "website": "",
-        "mission_area": "n/nw"
-      },
-      {
-        "name": "Paxton",
-        "address": "302 W. State St. Paxton IL 60957",
-        "phone": "(217) 801-9669",
-        "website": "paxnaz.church",
-        "mission_area": "s"
-      },
-      {
-        "name": "Potomac",
-        "address": "206 E. State St. Potomac IL 61865",
-        "phone": "217-987-6574",
-        "website": "",
-        "mission_area": "s"
-      },
-      {
-        "name": "Prairie Manor",
-        "address": "699 8th St. Chicago Heights IL 60411",
-        "phone": "708-481-3210",
-        "website": "",
-        "mission_area": "s/sw"
-      },
-      {
-        "name": "Prince of Peace",
-        "address": "3909 W North Ave, Chicago, IL 60647",
-        "phone": "(773) 814-9803",
-        "website": "",
-        "mission_area": "c"
-      },
-      {
-        "name": "Reach 77",
-        "address": "932 W. Willow St. Chicago IL 60614",
-        "phone": "773-456-7656",
-        "website": "reach77.net",
-        "mission_area": "c"
-      },
-      {
-        "name": "Rescue Us",
-        "address": "1629 King St., Tilton, IL 61833",
-        "phone": "(217) 446-7876",
-        "website": "",
-        "mission_area": "s"
-      },
-      {
-        "name": "Resurrection Community",
-        "address": "425 E. Court St. Kankakee IL 60901",
-        "phone": "815-933-2443",
-        "website": "",
-        "mission_area": "ce"
-      },
-      {
-        "name": "Ridgeland",
-        "address": "6343 W. 90th Pl. Oak Lawn IL 60453",
-        "phone": "708-599-5559",
-        "website": "ridgeland.church",
-        "mission_area": "s/sw"
-      },
-      {
-        "name": "Sheldon",
-        "address": "335 W. Center St. Sheldon IL 60966",
-        "phone": "815-295-6572",
-        "website": "sheldonnazarene.com",
-        "mission_area": "s"
-      },
-      {
-        "name": "SIMPLE TRUTH",
-        "address": "1603 Tanglefoot Ln, Bettendorf, IA 52722",
-        "phone": "(231) 920-8240",
-        "website": "",
-        "mission_area": "ce"
-      },
-      {
-        "name": "South Asian Ministries",
-        "address": "304 Shelbourne Rd. Round Lake IL 60073",
-        "phone": "708-261-8844",
-        "website": "",
-        "mission_area": "m"
-      },
-      {
-        "name": "The Loop",
-        "address": "633 S Plymouth Ct #703 Chicago, IL 60605",
-        "phone": "312-515-8453",
-        "website": "loopnaz.org",
-        "mission_area": "c"
-      },
-      {
-        "name": "The Table",
-        "address": "1451 Black Road Building B Joliet, IL 60435",
-        "phone": "815-726-5426",
-        "website": "thetablejoliet.org",
-        "mission_area": "s/sw"
-      },
-      {
-        "name": "TOTAL DELIVERANCE",
-        "address": "102 S Mill Street Aroma Park, IL 60910",
-        "phone": "708-890-8073",
-        "website": "",
-        "mission_area": "ce"
-      },
-      {
-        "name": "Waukegan Spanish",
-        "address": "3132 N. McAree Waukegan IL 60087",
-        "phone": "224-221-0599",
-        "website": "",
-        "mission_area": "h/l"
-      },
-      {
-        "name": "West Chicago",
-        "address": "643 E Washington West Chicago IL 60185",
-        "phone": "630-621-2056",
-        "website": "wciglesiadelnazareno.weebly.com",
-        "mission_area": "h/l"
-      },
-      {
-        "name": "Wilmington First",
-        "address": "303 S. Kankakee St. Wilmington IL 60481",
-        "phone": "815-476-4673",
-        "website": "",
-        "mission_area": "s/sw"
-      },
-      {
-        "name": "WONDERFULLY MADE",
-        "address": "1629 King St, Tilton, IL 61833",
-        "phone": "(217) 260-1645",
-        "website": "",
-        "mission_area": "s"
-      },
-      {
-        "name": "Word Fellowship Outreach",
-        "address": "8033 S Western Ave. Chicago IL 60620",
-        "phone": "773-580-1111",
-        "website": "",
-        "mission_area": "c"
-      },
-      {
-        "name": "Worth",
-        "address": "6825 W. 112th St. Worth IL 60482",
-        "phone": "708-448-8981",
-        "website": "",
-        "mission_area": "s/sw"
-      }
-    ]
-}
-      
+        {
+            "name": "Autumn Fields",
+            "address": "1629 King St, Tilton, IL 61833",
+            "phone": "(217) 260-1645",
+            "website": "",
+            "mission_area": "s",
+            "pastor": "Cody Miles"
+        },
+        {
+            "name": "Beyond the Goal Ministries",
+            "address": "590 Turnberry Dr. Bourbonnais IL 60914",
+            "phone": "815-953-0414",
+            "website": "",
+            "mission_area": "ce",
+            "pastor": "Bill Bahr"
+        },
+        {
+            "name": "Blue Island Spanish",
+            "address": "12815 Gregory St. Blue Island IL 60406",
+            "phone": "708-396-1617",
+            "website": "",
+            "mission_area": "h/l",
+            "pastor": "Nahum Primo"
+        },
+        {
+            "name": "Bradley First",
+            "address": "195 N. Douglas Ave. Bradley IL 60915",
+            "phone": "815-954-7187",
+            "website": "bradleynaz.com",
+            "mission_area": "ce",
+            "pastor": "Desiree Engelkens"
+        },
+        {
+            "name": "Casa de Oracíon",
+            "address": "12N101 Berner Dr. Elgin IL 60120",
+            "phone": "847-888-3795",
+            "website": "",
+            "mission_area": "h/l",
+            "pastor": "Andres Marin"
+        },
+        {
+            "name": "Celebrate Recovery - TK",
+            "address": "12725 Bell Rd. Lemont IL 60439",
+            "phone": "708-349-0454",
+            "website": "",
+            "mission_area": "n/nw",
+            "pastor": "Cathy Powell"
+        },
+        {
+            "name": "Chicago Calvary",
+            "address": "5536 131st St. Crestwood IL 60445",
+            "phone": "708-597-6122",
+            "website": "calvaryfriends.org",
+            "mission_area": "s/sw",
+            "pastor": "Ryan Kuehl"
+        },
+        {
+            "name": "Chicago Emanuel Spanish",
+            "address": "4232 N. California Ave. Chicago IL 60618",
+            "phone": "773-844-4061",
+            "website": "",
+            "mission_area": "h/l",
+            "pastor": "Pedro Aguilar"
+        },
+        {
+            "name": "Chicago First",
+            "address": "12725 Bell Rd. Lemont IL 60439",
+            "phone": "708-349-0454",
+            "website": "c1naz.org",
+            "mission_area": "n/nw",
+            "pastor": "Galen Ryman"
+        },
+        {
+            "name": "Chicago First Korean",
+            "address": "1435 W. Wise Rd. Schaumburg IL 60193",
+            "phone": "630-529-2345",
+            "website": "",
+            "mission_area": "m",
+            "pastor": "Junk Suk Yang"
+        },
+        {
+            "name": "Chicago First Spanish",
+            "address": "3909 W. North Ave. Chicago IL 60647-4617",
+            "phone": "773-862-8734",
+            "website": "",
+            "mission_area": "h/l",
+            "pastor": "Jose Alfaro"
+        },
+        {
+            "name": "Chicago Gage Park",
+            "address": "2806 West 59th Street Chicago IL 60629",
+            "phone": "773-306-2170",
+            "website": "",
+            "mission_area": "h/l",
+            "pastor": "Ezequiel Garcia"
+        },
+        {
+            "name": "Chicago Heights",
+            "address": "699 8th St. Chicago Heights IL 60411",
+            "phone": "708-481-3210",
+            "website": "chicagonaz.com",
+            "mission_area": "s/sw",
+            "pastor": "Daniel and Carolina Carillo"
+        },
+        {
+            "name": "Chicago Northside",
+            "address": "1900 W. Leland Ave. Chicago IL 60640",
+            "phone": "330-716-7519",
+            "website": "chicagonaz.org",
+            "mission_area": "c",
+            "pastor": "Dave and Betsy Scott"
+        },
+        {
+            "name": "Chicago Oak Lawn Arabic",
+            "address": "5536 131st St. Crestwood IL 60445",
+            "phone": "773-517-9304",
+            "website": "",
+            "mission_area": "m",
+            "pastor": "Magdi Mossad"
+        },
+        {
+            "name": "Chicago Southside Arabic",
+            "address": "15500 S. 73rd Ave. Orland Park IL 60462",
+            "phone": "708-532-6100",
+            "website": "",
+            "mission_area": "m",
+            "pastor": "Hosny Reyad"
+        },
+        {
+            "name": "Chicago Summit Spanish",
+            "address": "7401 W. 63rd St. Summit IL 60501",
+            "phone": "773-829-1574",
+            "website": "",
+            "mission_area": "h/l",
+            "pastor": "Rodolfo Pinto"
+        },
+        {
+            "name": "Chicago Uptown Vietnamese",
+            "address": "1900 W. Leland Ave. Chicago IL 60640",
+            "phone": "773-603-9449",
+            "website": "vietnazarene.wordpress.com",
+            "mission_area": "m",
+            "pastor": "Hoang Van Huynh"
+        },
+        {
+            "name": "College Church University Avenue",
+            "address": "200 University Ave. Bourbonnais IL 60914",
+            "phone": "815-933-7749",
+            "website": "collegechurch.org",
+            "mission_area": "ce",
+            "pastor": "Mark Quanstrom"
+        },
+        {
+            "name": "Community Cup",
+            "address": "900 W. Jeffery St., Kankakee, IL 60901",
+            "phone": "815-370-6663",
+            "website": "communitycupbbk.org",
+            "mission_area": "ce",
+            "pastor": "Makenzie and Mario Flores"
+        },
+        {
+            "name": "Cornerstone Bible",
+            "address": "120 N. Main St. South Elgin IL 60177",
+            "phone": "224-353-1350",
+            "website": "cbcnazarene.org",
+            "mission_area": "m",
+            "pastor": "James Ratthahao"
+        },
+        {
+            "name": "Cristo la Unica Esperanza",
+            "address": "32475 Alleghany Rd. Grayslake IL 60030",
+            "phone": "262-716-3912",
+            "website": "",
+            "mission_area": "h/l",
+            "pastor": "Eleuterio Dominguez"
+        },
+        {
+            "name": "Cross Creation Sports Academy",
+            "address": "16101 Reynolds St, Bennington, NE 68007",
+            "phone": "(309) 824-3887",
+            "website": "",
+            "mission_area": "ce",
+            "pastor": "Joshua Ayers"
+        },
+        {
+            "name": "CrossROADS",
+            "address": "322 Forest Blvd, Park Forest, IL 60466",
+            "phone": "(708) 390-9034",
+            "website": "",
+            "mission_area": "s/sw",
+            "pastor": "Don Wilson"
+        },
+        {
+            "name": "Danville First",
+            "address": "2212 N. Vermillion St. Danville IL 61832",
+            "phone": "217-442-8316",
+            "website": "danvillefirstnaz.com",
+            "mission_area": "s",
+            "pastor": "Dave Anderson"
+        },
+        {
+            "name": "Danville Prison Ministries",
+            "address": "3820 E. Main St. Danville IL 61834",
+            "phone": "217-775-7595",
+            "website": "",
+            "mission_area": "s",
+            "pastor": "Christ Easton"
+        },
+        {
+            "name": "Danville Westside",
+            "address": "403 Vance Ln. Danville IL 61832",
+            "phone": "217-446-0552",
+            "website": "",
+            "mission_area": "s",
+            "pastor": "Bill Wright"
+        },
+        {
+            "name": "Ebenezer",
+            "address": "1501 S. Linneman Rd. Mount Prospect IL 60056",
+            "phone": "847-437-6335",
+            "website": "",
+            "mission_area": "h/l",
+            "pastor": "Edy DeLeon"
+        },
+        {
+            "name": "El Taller Iglesia Del Nazareno",
+            "address": "3132 N. McAree, Waukegan, IL 60087",
+            "phone": "312-404-0678",
+            "website": "",
+            "mission_area": "h/l",
+            "pastor": "Oscar Trujillo"
+        },
+        {
+            "name": "El Shaddai",
+            "address": "4256 N. Oriole Ave., Norridge, IL 60706",
+            "phone": "(773) 217-6952",
+            "website": "",
+            "mission_area": "h/l",
+            "pastor": "Abel Mata"
+        },
+        {
+            "name": "Emmaus Road Gathering",
+            "address": "PO Box 479, Herscher, IL 60941",
+            "phone": "",
+            "website": "",
+            "mission_area": "ce",
+            "pastor": "Tanner Griffin"
+        },
+        {
+            "name": "GatheringPoint",
+            "address": "897 W. Bourbonnais Pkwy. Bourbonnais IL 60914",
+            "phone": "815-401-7700",
+            "website": "gatheringpoint.church",
+            "mission_area": "ce",
+            "pastor": "Paul Johnson"
+        },
+        {
+            "name": "Good News First Haitian",
+            "address": "1900 W. Leland Avenue Chicago, IL 60640",
+            "phone": "",
+            "website": "",
+            "mission_area": "c",
+            "pastor": "Hazard Felix"
+        },
+        {
+            "name": "Grace Community",
+            "address": "1629 King St. Tilton IL 61833",
+            "phone": "217-446-7876",
+            "website": "representgrace.com",
+            "mission_area": "s",
+            "pastor": "Christ Easton"
+        },
+        {
+            "name": "Greater New Testament",
+            "address": "12815 Gregory St. Blue Island IL 60406",
+            "phone": "708-662-0012",
+            "website": "",
+            "mission_area": "s/sw",
+            "pastor": "Al Saulsberry"
+        },
+        {
+            "name": "Hoopeston Community",
+            "address": "402 E. Honeywell Ave. Hoopeston IL 60942",
+            "phone": "217-283-9771",
+            "website": "hoopnaz.org",
+            "mission_area": "s",
+            "pastor": "Tom McCann"
+        },
+        {
+            "name": "Hope (Naperville)",
+            "address": "1451 Raymond Dr, Naperville, IL 60563",
+            "phone": "(847) 345-2082",
+            "website": "",
+            "mission_area": "n/nw",
+            "pastor": "Sam Boodala"
+        },
+        {
+            "name": "HOPE (Danville)",
+            "address": "12659 E. 2100 North Rd. Danville IL 61834",
+            "phone": "217-442-8909",
+            "website": "cedargrovenaz.com",
+            "mission_area": "s",
+            "pastor": "Nathan Bargo"
+        },
+        {
+            "name": "House of Prayer Ministries",
+            "address": "480 Lakewood Blvd. Park Forest IL 60466",
+            "phone": "708-283-9700",
+            "website": "",
+            "mission_area": "s/sw",
+            "pastor": "Victor Walker"
+        },
+        {
+            "name": "IGLESIA DEL NAZARENO FUENTE DE VIDA",
+            "address": "155 Deerfield Road, Deerfield, IL 60015",
+            "phone": "847-922-6446",
+            "website": "",
+            "mission_area": "h/l",
+            "pastor": "Israel Ramirez"
+        },
+        {
+            "name": "Immanuel Senior Residence",
+            "address": "1629 King St., Tilton, IL 61833",
+            "phone": "(217) 446-7876",
+            "website": "",
+            "mission_area": "s",
+            "pastor": ""
+        },
+        {
+            "name": "Joliet Crystal Lawns",
+            "address": "2424 Caton Farm Rd. Joliet IL 60435",
+            "phone": "815-436-3380",
+            "website": "clnaz.org",
+            "mission_area": "s/sw",
+            "pastor": "Doug Ward"
+        },
+        {
+            "name": "Kankakee Eastridge",
+            "address": "2679 E. Court St. Kankakee IL 60901",
+            "phone": "815-932-9413",
+            "website": "eastridgenaz.org",
+            "mission_area": "ce",
+            "pastor": "Greg Chambers"
+        },
+        {
+            "name": "Kankakee First",
+            "address": "1000 N. Entrance Ave. Kankakee IL 60901",
+            "phone": "815-933-1000",
+            "website": "k1naz.org",
+            "mission_area": "ce",
+            "pastor": "David Anderson"
+        },
+        {
+            "name": "Kankakee Salvage Yard Biker",
+            "address": "200 University Ave. Bourbonnais IL 60914",
+            "phone": "815-939-1545",
+            "website": "",
+            "mission_area": "ce",
+            "pastor": "Julie Branstetter"
+        },
+        {
+            "name": "Kempton",
+            "address": "105 E. Main St. Kempton IL 60946",
+            "phone": "815-253-6250",
+            "website": "",
+            "mission_area": "ce",
+            "pastor": "John Mohler"
+        },
+        {
+            "name": "Lighthouse Community",
+            "address": "17500 Lighthouse Ln. Lansing IL 60438",
+            "phone": "708-474-9045",
+            "website": "MyLC.church",
+            "mission_area": "s/sw",
+            "pastor": "Michael Carey"
+        },
+        {
+            "name": "Limestone Community",
+            "address": "863 N. 5000 W. Rd. Kankakee IL 60901",
+            "phone": "815-263-4090",
+            "website": "",
+            "mission_area": "ce",
+            "pastor": "Don Harrison"
+        },
+        {
+            "name": "Lombard",
+            "address": "536 N. Route 53 Lombard IL 60148",
+            "phone": "630-627-9444",
+            "website": "lombardchurch.org",
+            "mission_area": "n/nw",
+            "pastor": "Michael Parenti"
+        },
+        {
+            "name": "Manteno",
+            "address": "698 N. Locust St. Manteno IL 60950",
+            "phone": "815-468-8946",
+            "website": "mantenonazarene.org",
+            "mission_area": "ce",
+            "pastor": "Ken Bushey"
+        },
+        {
+            "name": "Milford",
+            "address": "20 S. Axtel Ave. Milford IL 60953",
+            "phone": "217-249-2814",
+            "website": "",
+            "mission_area": "s",
+            "pastor": "Bob Killion"
+        },
+        {
+            "name": "Mundelein",
+            "address": "1515 W. Maple Ave. Rte. 176 Mundelein IL 60060",
+            "phone": "847-345-5549",
+            "website": "mundeleinnaz.org",
+            "mission_area": "n/nw",
+            "pastor": "Ryan Welshans"
+        },
+        {
+            "name": "Mundelein Spanish",
+            "address": "1515 W. Maple Ave. Mundelein IL 60060",
+            "phone": "847-219-3694",
+            "website": "",
+            "mission_area": "h/l",
+            "pastor": "Samy Mendez"
+        },
+        {
+            "name": "Naperville Trinity",
+            "address": "1451 Raymond Dr. Naperville IL 60563",
+            "phone": "630-778-0328",
+            "website": "trinitynazarene.org",
+            "mission_area": "n/nw",
+            "pastor": "David King"
+        },
+        {
+            "name": "NAPERVILLE TRINITY - CR Dupage County Jail",
+            "address": "1451 Raymond Dr. Naperville IL 60563",
+            "phone": "630-778-0328",
+            "website": "",
+            "mission_area": "n/nw",
+            "pastor": "Chris Fabbri"
+        },
+        {
+            "name": "New Future Mongolian",
+            "address": "536 N. Route 53 Lombard IL 60148",
+            "phone": "331-771-1127",
+            "website": "",
+            "mission_area": "m",
+            "pastor": "Paul Bold"
+        },
+        {
+            "name": "North Chicago",
+            "address": "2044 Seymour Ave. North Chicago IL 60064",
+            "phone": "773-931-8025",
+            "website": "",
+            "mission_area": "h/l",
+            "pastor": "Manuel Andino"
+        },
+        {
+            "name": "Northshore",
+            "address": "545 Woodlawn Ave, Glencoe, IL 60022",
+            "phone": "615-415-0994",
+            "website": "",
+            "mission_area": "n/nw",
+            "pastor": "Brandon Arbuckle"
+        },
+        {
+            "name": "Paxton",
+            "address": "302 W. State St. Paxton IL 60957",
+            "phone": "(217) 801-9669",
+            "website": "paxnaz.church",
+            "mission_area": "s",
+            "pastor": "Adam Wood"
+        },
+        {
+            "name": "Potomac",
+            "address": "206 E. State St. Potomac IL 61865",
+            "phone": "217-987-6574",
+            "website": "",
+            "mission_area": "s",
+            "pastor": "Randy Holden"
+        },
+        {
+            "name": "Prairie Manor",
+            "address": "699 8th St. Chicago Heights IL 60411",
+            "phone": "708-481-3210",
+            "website": "",
+            "mission_area": "s/sw",
+            "pastor": "Kathryn Pennix"
+        },
+        {
+            "name": "Prince of Peace",
+            "address": "3909 W North Ave, Chicago, IL 60647",
+            "phone": "(773) 814-9803",
+            "website": "",
+            "mission_area": "c",
+            "pastor": "Rolando Alvares"
+        },
+        {
+            "name": "Reach 77",
+            "address": "932 W. Willow St. Chicago IL 60614",
+            "phone": "773-456-7656",
+            "website": "reach77.net",
+            "mission_area": "c",
+            "pastor": ""
+        },
+        {
+            "name": "Rescue Us",
+            "address": "1629 King St., Tilton, IL 61833",
+            "phone": "(217) 446-7876",
+            "website": "",
+            "mission_area": "s",
+            "pastor": "Felix Velazquez"
+        },
+        {
+            "name": "Resurrection Community",
+            "address": "425 E. Court St. Kankakee IL 60901",
+            "phone": "815-933-2443",
+            "website": "",
+            "mission_area": "ce",
+            "pastor": "Tina Burton"
+          },
+          {
+            "name": "Ridgeland",
+            "address": "6343 W. 90th Pl. Oak Lawn IL 60453",
+            "phone": "708-599-5559",
+            "website": "ridgeland.church",
+            "mission_area": "s/sw",
+            "pastor": "Jared Richey"
+          },
+          {
+            "name": "Sheldon",
+            "address": "335 W. Center St. Sheldon IL 60966",
+            "phone": "815-295-6572",
+            "website": "sheldonnazarene.com",
+            "mission_area": "s",
+            "pastor": "Deb White"
+          },
+          {
+            "name": "SIMPLE TRUTH",
+            "address": "1603 Tanglefoot Ln, Bettendorf, IA 52722",
+            "phone": "(231) 920-8240",
+            "website": "",
+            "mission_area": "ce",
+            "pastor": "Bryan McConnell"
+          },
+          {
+            "name": "South Asian Ministries",
+            "address": "304 Shelbourne Rd. Round Lake IL 60073",
+            "phone": "708-261-8844",
+            "website": "",
+            "mission_area": "m",
+            "pastor": "Sunil Gaikwad"
+          },
+          {
+            "name": "The Loop",
+            "address": "633 S Plymouth Ct #703 Chicago, IL 60605",
+            "phone": "312-515-8453",
+            "website": "loopnaz.org",
+            "mission_area": "c",
+            "pastor": "Reuben Lillie"
+          },
+          {
+            "name": "The Table",
+            "address": "1451 Black Road Building B Joliet, IL 60435",
+            "phone": "815-726-5426",
+            "website": "thetablejoliet.org",
+            "mission_area": "s/sw",
+            "pastor": "Nate Smith"
+          },
+          {
+            "name": "TOTAL DELIVERANCE",
+            "address": "102 S Mill Street Aroma Park, IL 60910",
+            "phone": "708-890-8073",
+            "website": "",
+            "mission_area": "ce",
+            "pastor": "Larry Henderson"
+          },
+          {
+            "name": "Waukegan Spanish",
+            "address": "3132 N. McAree Waukegan IL 60087",
+            "phone": "224-221-0599",
+            "website": "",
+            "mission_area": "h/l",
+            "pastor": "Carlos Bran"
+          },
+          {
+            "name": "West Chicago",
+            "address": "643 E Washington West Chicago IL 60185",
+            "phone": "630-621-2056",
+            "website": "wciglesiadelnazareno.weebly.com",
+            "mission_area": "h/l",
+            "pastor": "Enrique Polanco"
+          },
+          {
+            "name": "Wilmington First",
+            "address": "303 S. Kankakee St. Wilmington IL 60481",
+            "phone": "815-476-4673",
+            "website": "",
+            "mission_area": "s/sw",
+            "pastor": "Bill Luttrell"
+          },
+          {
+            "name": "WONDERFULLY MADE",
+            "address": "1629 King St, Tilton, IL 61833",
+            "phone": "(217) 260-1645",
+            "website": "",
+            "mission_area": "s",
+            "pastor": "Cody Miles"
+          },
+          {
+            "name": "Word Fellowship Outreach",
+            "address": "8033 S Western Ave. Chicago IL 60620",
+            "phone": "773-580-1111",
+            "website": "",
+            "mission_area": "c",
+            "pastor": "Daniel Thomas"
+          },
+          {
+            "name": "Worth",
+            "address": "6825 W. 112th St. Worth IL 60482",
+            "phone": "708-448-8981",
+            "website": "",
+            "mission_area": "s/sw",
+            "pastor": "Leanard Martz"
+          }
+        ]
+    }
+          

@@ -159,9 +159,10 @@ function displayChurches(churches, selectedMission) {
             churchDiv.innerHTML = `
                 <div class="mission-text">
                     <h2>${church.name}</h2>
-                    <p><strong>Address:</strong> ${church.address}</p>
-                    <p><strong>Phone:</strong> <a href="tel:${church.phone}">${church.phone}</a></p>
-                    <p><strong>Website:</strong> <a href="${church.website}" target="_blank">${church.website}</a></p>
+                    ${church.pastor ? `<p><strong>Pastor:</strong> ${church.pastor}</p>` : ''}
+                    ${church.address ? `<p><strong>Address:</strong> ${church.address}</p>` : ''}
+                    ${church.phone ? `<p><strong>Phone:</strong> ${church.phone}</p>` : ''}
+                    ${church.website ? `<p><strong>Website:</strong> <a href="${church.website}">${church.website}</a></p>` : ''}
                 </div>
             `;
 
