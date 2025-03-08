@@ -76,7 +76,7 @@ body {
 .featured-event img {
     width: 40%;
     max-width: 750px;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     border-radius: 12px;
     image-rendering: smooth;
