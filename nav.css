@@ -203,6 +203,10 @@ header {
       opacity: 1;
       pointer-events: initial;
     }
+
+    nav ul .dropbtn {
+      padding: 10px 0px;
+    }
   
     /* Adjust text size for mobile */
     .dropdown-content a {

@@ -58,30 +58,30 @@ function initializeMissionAreas(churches) {
         },
         {
           abbreviation: 'h/l',
-          name: 'Hispanic/Latino Churches',
+          name: 'Hispanic Churches',
           leader: 'Edy De Leon',
           leader2: 'Jose Alfaro',
           imageUrl: 'images/ma-leaders/Edy+De+Leon+Headshot.jpg',
           imageUrl2: 'images/ma-leaders/Jose+Alfaro+Headshot.jpg',
-          areaImageUrl: 'images/ccd-regions/CCD+Hispanic+Full.png'
+          areaImageUrl: 'images/ccd-regions/CCD+Chicago+Full.png'
         },
         {
           abbreviation: 'm',
           name: 'Multi-language Churches',
           leader: 'Paul & Linda Bold',
           imageUrl: 'images/ma-leaders/Paul+Bold+Headshot.jpg',
-          areaImageUrl: 'images/ccd-regions/CCD+Multi-Language+Full.png'
+          areaImageUrl: 'images/ccd-regions/CCD+Chicago+Full.png'
         }
       ];
     const order = ["n/nw", "c", "s/sw", "ce", "s", "h/l", "m"];
-    const missionAreaPrettyNames = ["North/NorthWest Mission Area", "Chicago Mission Area", "South/Southwest Mission Area", "Central Mission Area", "Southern Mission Area", "Hispanic/Latino Churches", "Multi-language Churches"];
+    const missionAreaPrettyNames = ["North/NorthWest Mission Area", "Chicago Mission Area", "South/Southwest Mission Area", "Central Mission Area", "Southern Mission Area", "Hispanic Churches", "Multi-language Churches"];
     const missionAreaMap = {
         "n/nw": "North/NorthWest Mission Area",
         "c": "Chicago Mission Area",
         "s/sw": "South/Southwest Mission Area",
         "ce": "Central Mission Area",
         "s": "Southern Mission Area",
-        "h/l": "Hispanic/Latino Churches",
+        "h/l": "Hispanic Churches",
         "m": "Multi-language Churches"
       };
 
