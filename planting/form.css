@@ -1,0 +1,153 @@
+
+/*  Form  */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  #form-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 0px;
+  }
+  .formbold-main-wrapper {
+    font-family: 'Inter', sans-serif;
+  }
+  .formbold-mb-3 {
+    margin-bottom: 15px;
+  }
+  /* .formbold-relative {
+    position: relative;
+  } */
+  /* .formbold-opacity-0 {
+    opacity: 0;
+  } */
+  /* .formbold-stroke-current {
+    stroke: currentColor;
+  } */
+
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 48px;
+    background: rgb(22, 22, 22);
+    border: inset 5px;
+    max-width: 600px;
+    color: white;
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    width: 80%;
+    background: rgb(22, 22, 22);
+    padding: 0px 40px 40px 40px;
+  }
+  .formbold-form-title {
+    margin-bottom: 30px;
+  }
+  .formbold-form-title h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 34px;
+    color: white;
+    margin-top: 0px;
+  }
+  .formbold-form-title p {
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    margin-top: 12px;
+  }
+
+  .formbold-input-flex {
+    display: flex;
+    gap: 0px 50px;
+    margin-bottom: 15px;
+  }
+  .formbold-input-flex > div {
+    width: 50%;
+  }
+  .formbold-form-input {
+    text-align: center;
+    width: calc(100% - 44px);
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 1px solid #0081b8;
+    background: #083345;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    resize: none;
+    text-align: left;
+  }
+  .formbold-form-input-last{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    text-align: center;
+    width: calc(100% - 44px);
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 1px solid #0081b8;
+    background: #083345;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    resize: none;
+    text-align: left;
+  }
+  .formbold-input-flex-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .formbold-form-input:focus {
+    border-color: #0081b8;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+  .formbold-form-label {
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  #descriptions{
+    resize: vertical;
+  }
+  .formbold-btn {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #0081b8;
+    color: white;
+    cursor: pointer;
+    margin-top: 48px;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+@media only screen and (max-width: 650px){
+    .formbold-input-flex{
+        flex-direction: column;
+    }
+    .formbold-input-flex > div {
+        width: 100%;
+    }
+    .formbold-main-wrapper {
+        padding: 28px;
+      }
+}

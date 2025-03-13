@@ -1,0 +1,150 @@
+body{
+    /* background-color: #0081b8 #083345; */
+    /* background-color: rgb(22, 22, 22); */
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+video{
+    width: 100vw;
+    height: auto;
+
+}
+@media only screen and (max-width: 1200px){
+    video{
+        position: relative;
+        top: 60px;
+    }
+}
+#all-kinds{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    /* width: 50%; */
+    max-width: 90vw;
+}
+#all-kinds-text{
+    text-align: center;
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: clamp(10px, 8vw, 24px);
+    margin: 100px auto 100px auto;
+}
+#all-kinds-text span{
+    color: #0081b8;
+}
+hr{
+    background-color: white;
+    width: 80%;
+    margin: 150px auto 150px auto;
+}
+#subtitle{
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+}
+#one, #two, #three, #four, #five {
+    width: calc(100% - 200px);
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    padding: 25px 100px;
+}
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover{
+    scale: 1.1;
+    transition: ease 2s;
+    cursor: pointer;
+}
+.panel{
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    color: white;
+}
+#one .panel{ 
+    background: linear-gradient(to top, rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('images/image.png');
+    /* background-color: rgba(22, 22, 22, 0.8); */
+    /* background-image: url('images/image.png'); */
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    font-size: clamp(10px, 8vw, 24px);
+    background-size: cover;
+    background-position: center;
+}
+#two .panel{ 
+    background: linear-gradient(to top, rgb(8, 51, 69, 0.5), rgb(8, 51, 69, 0.5)), url('images/Screenshot\ CCDCP.png');
+    /* background-color: rgba(22, 22, 22, 0.8); */
+    /* background-image: url('images/image.png'); */
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    font-size: clamp(10px, 8vw, 24px);
+    background-size: cover;
+    background-position: center;
+}
+#three .panel{ 
+    background: linear-gradient(to top, rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('images/image\ \(2\).png');
+    /* background-color: rgba(22, 22, 22, 0.8); */
+    /* background-image: url('images/image.png'); */
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    font-size: clamp(10px, 8vw, 24px);
+    background-size: cover;
+    background-position: center;
+}
+#four .panel{ 
+    background: linear-gradient(to top, rgb(8, 51, 69, 0.5), rgb(8, 51, 69, 0.5)), url('images/image\ \(3\).png');
+    /* background-color: rgba(22, 22, 22, 0.8); */
+    /* background-image: url('images/image.png'); */
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    font-size: clamp(10px, 8vw, 24px);
+    background-size: cover;
+    background-position: center;
+}
+#five .panel{ 
+    background: linear-gradient(to top, rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('images/image\ \(4\).png');
+    /* background-color: rgba(22, 22, 22, 0.8); */
+    /* background-image: url('images/image.png'); */
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    font-size: clamp(10px, 8vw, 24px);
+    background-size: cover;
+    background-position: center;
+}
+.panel h1{
+    margin: 0px;
+}
+.panel p{
+    margin: 50px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 900px){
+    #one .panel, #two .panel, #three .panel, #four .panel, #five .panel{
+        padding: 10px;
+    }
+    #one, #two, #three, #four, #five{
+        padding: 10px;
+        width: calc(100% - 20px);
+        display: flex;
+        justify-content: space-around;
+        gap: 100px;
+    }
+    #subtitle{
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+    }
+}

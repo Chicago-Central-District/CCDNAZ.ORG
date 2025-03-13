@@ -1,0 +1,99 @@
+body{
+    background: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+video{
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: 60px;
+    margin-bottom: 150px;
+}
+@media only screen and (max-width: 1200px){
+    video{
+        position: relative;
+        top: 120px;
+        margin-bottom: 150px;
+    }
+}
+
+#step-one, #step-two, #step-three, #step-four, #step-five, #step-six {
+    width: 90vw;
+    margin: 25px auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 50px;
+    line-height: 2;
+}
+
+.left {
+    width: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    padding-right: 50px;
+}
+.right {
+    width: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.left img, .right img {
+    width: 100%;
+}
+
+.left h1, .right h1 {
+    margin-bottom: 100px;
+    font-size: clamp(32px, 4vw, 54px);
+}
+.left li, .right li {
+    font-size: clamp(18px, 4vw, 24px);
+}
+
+@media only screen and (max-width: 1000px){
+    #step-one, #step-three, #step-five{
+        flex-direction: column;
+        width: 320px;
+    }
+    #step-two, #step-four, #step-six{
+        flex-direction: column-reverse;
+        width: 320px;
+    }
+    .left{
+        padding: 0px;
+        width: 300px;
+    }
+    .right{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 450px){
+    #step-one, #step-three, #step-five{
+        flex-direction: column;
+        width: 270px;
+    }
+    #step-two, #step-four, #step-six{
+        flex-direction: column-reverse;
+        width: 270px;
+    }
+    .left{
+        padding: 0px;
+        width: 250px;
+    }
+    .right{
+        width: 250px;
+    }
+}
+
+
+
+
+
+

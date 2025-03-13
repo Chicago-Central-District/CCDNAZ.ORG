@@ -1,0 +1,145 @@
+body{
+    background-color: #0081b8 /*#083345*/;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+#img-container{
+    object-fit: cover;
+    max-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+#head-pic {
+    /* width: 100vw; */
+    flex-shrink: 0;
+    width: 100vw;
+    height: auto;
+ }
+
+
+
+
+
+#title {
+    color: black;
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+}
+#some-text {
+    font-size: clamp(14px, 8vw, 32px);
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+#left {
+    width: 50%;
+    padding: 50px;
+    position: relative;
+}
+#left h2{
+    color: white;
+    font-size: clamp(18px, 4vw, 48px);
+    text-wrap: nowrap;
+}
+#left h2 span {
+    font-size: clamp(24px, 8vw, 120px);
+    padding: 10px;
+}
+
+
+
+#right {
+    width: 50%;
+    padding: 50px;
+
+}
+#right ul li{
+    color: white;
+    font-size: clamp(18px, 4vw, 32px);
+}
+.panel {
+    border: solid 3px #0081b8;
+    color: white;
+    border-radius: 25px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+div.panel:nth-child(1){
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/pexels-pixabay-261719.jpg');
+    background-size: cover;
+    background-position: center;
+}
+div.panel:nth-child(2){
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/Image\ 2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+div.panel:nth-child(3){
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/People.jpg');
+    background-size: cover;
+    background-position: center;
+}
+div.panel:nth-child(4){
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/organization-chart-2556925_1920.jpg');
+    background-size: cover;
+    background-position: center;
+}
+div.panel:nth-child(5){
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/pexels-fauxels-3184418.jpg');
+    background-size: cover;
+    background-position: center;
+}
+div.panel:nth-child(6){
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/pexels-daniel-574177.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 1100px){
+    .panel{
+        flex-direction: column;
+    }
+    #left h2{
+        text-align: center;
+        width: 100%;
+    }
+    #left {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 550px){
+    #right{
+        width: 80%;
+    }
+    #left h2 span {
+        padding: 10px 5px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .panel{
+        margin: 20px;
+    }
+}

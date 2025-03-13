@@ -1,0 +1,226 @@
+  /* Logo Images */
+  .nav-image {
+    height: 50px;
+    width: auto;
+    transition: height 0.3s ease-in-out, background 0.3s ease-in-out;
+  }
+
+#nav_h1{
+    margin: 0px 0px;
+    position: fixed;
+    transform: translateX(-50%);
+    z-index: 3;
+    top: 10px;
+    text-align: center;
+    left: 50vw;
+    color: white;
+    font-size: 32px;
+}
+nav{
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    padding: 0px 0px;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    height: 60px;
+    margin-left: 10px;
+    transition: ease 1s;
+}
+nav #ul{
+    color: white;
+    margin: 0px;
+    margin-right: 10px;
+    font-size: 18px;
+    position: relative;
+    z-index: 5;
+    visibility: visible;
+}
+nav #ul a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+}
+nav #ul a:hover{
+    /* color: white; */
+    text-decoration: underline;
+}
+nav #ul a:visited{
+    color: white;
+    text-decoration: underline;
+}
+nav #menu{
+    display: none;
+}
+nav #ul2{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+    font-size: 24px;
+    background-color: black;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav #ul2 #close{
+    padding: 25px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    color: white;
+    cursor: pointer;
+}
+nav #ul2 #stages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+nav #ul2 #stages label {
+    color: white;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+nav #ul2 #stages #list{
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: normal;
+    font-size: 18px;
+    gap: 25px;
+}
+nav #ul2 #stages #list a.list{
+    color: white;
+    width: 100%;
+    padding: 10px;
+}
+nav #ul2 #stages #list a.list:hover{
+    color: black;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+}
+nav #ul2 a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px 40px;
+    background-color: black;
+    width: 100%;
+}
+nav #ul2 a:hover{
+    color: rgb(22, 22, 22);
+    background-color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+  .dropbtn {
+    color: white;
+    background-color: black;
+    border: solid 2px white;
+    padding: 16px;
+    padding-right: 38px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .dropbtn:before {
+    content: "\f078";
+    font-family: FontAwesome;
+    position: absolute;
+    z-index: 1;
+    right: 12.5px;
+    top: auto;
+}
+  
+  .dropbtn:hover, .dropbtn:active{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content.show {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: black;
+  }
+
+  nav #ul .dropdown-content a:hover {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+  }
+
+@media only screen and (max-width: 600px){
+    #nav_h1{
+        font-size: 18px;
+        top: 20px;
+    }
+    nav img{
+        height: 40px;
+    }
+}
+@media only screen and (max-width: 1155px){
+    nav #menu{
+        display: block;
+        width: 40px;
+        height: auto;
+        margin: 10px;
+        cursor: pointer;
+    }
+    nav ul li:hover{
+        background-color: white;
+        color: black;
+    }
+    nav #ul{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1155px){
+    nav #ul2{
+        display: none;
+    }
+}
+

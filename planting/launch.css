@@ -1,0 +1,209 @@
+body{
+    background: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+
+
+
+
+#img-container{
+    object-fit: cover;
+    max-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#head-pic {
+    /* width: 100vw; */
+    flex-shrink: 0;
+    width: 100vw;
+    height: auto;
+ }
+
+
+
+
+#desc{ 
+    margin: 100px auto 10px auto;
+    font-size: clamp(14px, 4vw, 32px);
+    max-width: 1400px;
+    height: auto;
+    background-color: #083345;
+    color: black;
+    padding: 20px;
+    background-image: linear-gradient(to top, rgba(8, 51, 69, 0.8), rgba(8, 51, 69, 0.8) ), url('man-2179326_1920.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#desc ul{
+    margin-left: 20px;
+}
+b{
+    word-wrap: wrap;
+}
+
+#styles-title{
+    font-size: 48px;
+    text-align: center;
+    color: black;
+    margin: 50px 0px;
+}
+#styles{
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    margin-bottom: 50px;
+    padding: 0px 50px;
+}
+
+
+
+section{
+    width: calc(100vw - 100px);
+    /* height: auto; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px;
+    position: relative;
+}
+.card{
+    width: 100vw;
+    max-width: 20%;
+    height: 400px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.card #description{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 100%;
+    height: 360px;
+    top: 0px;
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    padding: 20px;
+    color: white;
+
+    transform: translateY(calc(100% - 130px));
+    transition: ease 1s;
+}
+.card h1{
+    color: white;
+    font-size: 30px;
+    margin: 10px 0px;
+    text-align: center;
+}
+.card h3{
+    font-size: 16px;
+    text-align: center;
+    margin: 0px;
+}
+.card #hr{
+    width: 50%;
+    content: "";
+    border: solid 1px #0081b8;
+    opacity: 0;
+    transition: ease 1s;
+    margin: 50px 0px;
+}
+.card p{
+    opacity: 0;
+    transition: ease 1s;
+    transition-delay: 500ms;
+}
+.card a button{
+    border: solid 3px #0081b8;
+    border-radius: 15px;
+    color: white;
+    background-color: #0081b8;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1600px){
+    .card {
+        max-width: 30%;
+    }
+    .card:hover{
+        transform: translateY(0)
+    }
+}
+@media only screen and (max-width: 1150px){
+    .card {
+        max-width: 45%;
+    }
+    .card:hover{
+        transform: translateY(0)
+    }
+}
+@media only screen and (max-width: 800px){
+    .card {
+        max-width: 70%;
+        height: 500px;
+    }
+    .card #description{
+        height: 460px;
+
+        transform: translateY(calc(100% - 175px));
+    }
+    section{
+        padding: 10px;
+        width: calc(100vw - 20px);
+    }
+    .card:hover{
+        transform: translateY(0)
+    }
+}
+@media only screen and (max-width: 400px){
+    .card {
+        max-width: 90%;
+        height: 650px;
+    }
+    .card #description{
+        height: 610px;
+    }
+    section{
+        padding: 10px;  
+        width: calc(100vw - 20px);
+    }
+    .card:hover{
+        transform: translateY(0)
+    }
+}
+.card #description:hover{
+    transform: translateY(0)
+}
+.card:hover > #description{
+    transform: translateY(0)
+}
+.card #description:hover > #hr{
+    opacity: 1;
+}
+.card:hover > #description > #hr{
+    opacity: 1;
+}
+.card #description:hover > p{
+    opacity: 1;
+}
+.card:hover > #description > p{
+    opacity: 1;
+}
+.card #description button:hover{
+    transform: scale(1.1);
+}
