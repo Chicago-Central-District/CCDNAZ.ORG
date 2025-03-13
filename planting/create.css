@@ -88,32 +88,32 @@ section {
     padding: 50px 0px;
 }
 div.panel:nth-child(1){
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/pexels-pixabay-261719.jpg');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://media.githubusercontent.com/media/Chicago-Central-District/CCDNAZ.ORG/main/planting/images/pexels-pixabay-261719.jpg');
     background-size: cover;
     background-position: center;
 }
 div.panel:nth-child(2){
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/Image\ 2.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://media.githubusercontent.com/media/Chicago-Central-District/CCDNAZ.ORG/main/planting/images/Image\ 2.jpg');
     background-size: cover;
     background-position: center;
 }
 div.panel:nth-child(3){
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/People.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://media.githubusercontent.com/media/Chicago-Central-District/CCDNAZ.ORG/main/planting/images/People.jpg');
     background-size: cover;
     background-position: center;
 }
 div.panel:nth-child(4){
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/organization-chart-2556925_1920.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://media.githubusercontent.com/media/Chicago-Central-District/CCDNAZ.ORG/main/planting/images/organization-chart-2556925_1920.jpg');
     background-size: cover;
     background-position: center;
 }
 div.panel:nth-child(5){
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/pexels-fauxels-3184418.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('ihttps://media.githubusercontent.com/media/Chicago-Central-District/CCDNAZ.ORG/main/planting/mages/pexels-fauxels-3184418.jpg');
     background-size: cover;
     background-position: center;
 }
 div.panel:nth-child(6){
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/pexels-daniel-574177.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://media.githubusercontent.com/media/Chicago-Central-District/CCDNAZ.ORG/main/planting/images/pexels-daniel-574177.jpg');
     background-size: cover;
     background-position: center;
 }

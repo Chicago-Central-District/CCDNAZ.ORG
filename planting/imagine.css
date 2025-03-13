@@ -31,7 +31,7 @@ video{
     background-color: #083345;
     color: white;
     padding: 20px;
-    background-image: linear-gradient(to top, rgba(8, 51, 69, 0.8), rgba(8, 51, 69, 0.8) ), url('man-2179326_1920.jpg');
+    background-image: linear-gradient(to top, rgba(8, 51, 69, 0.8), rgba(8, 51, 69, 0.8) ), url('https://media.githubusercontent.com/media/Chicago-Central-District/CCDNAZ.ORG/main/planting/man-2179326_1920.jpg');
     background-size: cover;
     background-position: center;
 }

@@ -70,7 +70,7 @@ hr{
     color: white;
 }
 #one .panel{ 
-    background: linear-gradient(to top, rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('images/image.png');
+    background: linear-gradient(to top, rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('https://media.githubusercontent.com/media/Chicago-Central-District/CCDNAZ.ORG/main/planting/images/image.png');
     /* background-color: rgba(22, 22, 22, 0.8); */
     /* background-image: url('images/image.png'); */
     position: relative;
@@ -81,7 +81,7 @@ hr{
     background-position: center;
 }
 #two .panel{ 
-    background: linear-gradient(to top, rgb(8, 51, 69, 0.5), rgb(8, 51, 69, 0.5)), url('images/Screenshot\ CCDCP.png');
+    background: linear-gradient(to top, rgb(8, 51, 69, 0.5), rgb(8, 51, 69, 0.5)), url('https://media.githubusercontent.com/media/Chicago-Central-District/CCDNAZ.ORG/main/planting/images/Screenshot\ CCDCP.png');
     /* background-color: rgba(22, 22, 22, 0.8); */
     /* background-image: url('images/image.png'); */
     position: relative;
@@ -92,7 +92,7 @@ hr{
     background-position: center;
 }
 #three .panel{ 
-    background: linear-gradient(to top, rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('images/image\ \(2\).png');
+    background: linear-gradient(to top, rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('https://media.githubusercontent.com/media/Chicago-Central-District/CCDNAZ.ORG/main/planting/images/image\ \(2\).png');
     /* background-color: rgba(22, 22, 22, 0.8); */
     /* background-image: url('images/image.png'); */
     position: relative;
@@ -103,7 +103,7 @@ hr{
     background-position: center;
 }
 #four .panel{ 
-    background: linear-gradient(to top, rgb(8, 51, 69, 0.5), rgb(8, 51, 69, 0.5)), url('images/image\ \(3\).png');
+    background: linear-gradient(to top, rgb(8, 51, 69, 0.5), rgb(8, 51, 69, 0.5)), url('https://media.githubusercontent.com/media/Chicago-Central-District/CCDNAZ.ORG/main/planting/images/image\ \(3\).png');
     /* background-color: rgba(22, 22, 22, 0.8); */
     /* background-image: url('images/image.png'); */
     position: relative;
@@ -114,7 +114,7 @@ hr{
     background-position: center;
 }
 #five .panel{ 
-    background: linear-gradient(to top, rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('images/image\ \(4\).png');
+    background: linear-gradient(to top, rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('https://media.githubusercontent.com/media/Chicago-Central-District/CCDNAZ.ORG/main/planting/images/image\ \(4\).png');
     /* background-color: rgba(22, 22, 22, 0.8); */
     /* background-image: url('images/image.png'); */
     position: relative;
