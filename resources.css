@@ -71,23 +71,26 @@
     margin: auto;
     display: flex;
     flex-direction: column; /* Stack the groups vertically */
-    gap: 50px; /* Gap between the groups */
-    align-items: flex-start; /* Align groups to the start of the container */
+    gap: 75px; /* Gap between the groups */
+    align-items: stretch; /* Align groups to the start of the container */
     width: 80%;
+    max-width: 1200px;
 }
 
 .group {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 50%;
     gap: 50px; /* Set the gap between items */
-    justify-content: space-between; /* Align items to the start */
+    align-items: stretch;
+    justify-content: flex-start;
     width: 100%; /* Ensure each group takes up full width */
 }
 
 .resource-category {
-    flex: 1 1 calc(25% - 50px); /* Flex-basis: 22% */
+    flex: 0 1 30%;
+    /* flex: 300px; */
     min-width: 250px;
+    /* max-width: 300px; */
     text-align: left;
     box-sizing: border-box; /* Include padding/borders in width */
 }
