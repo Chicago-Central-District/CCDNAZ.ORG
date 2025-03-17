@@ -1,0 +1,39 @@
+section {
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#vote {
+    text-decoration: none;
+    background-color: var(--dark-text-blue);
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 50px;
+    display: block;
+    transition: ease 0.5s;
+}
+
+#vote:hover {
+    text-decoration: none;
+    background-color: var(--dark-text-blue);
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 50px;
+    display: block;
+    transition: ease 0.5s;
+    transform: scale(1.1);
+}
