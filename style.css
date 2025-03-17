@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --primary-blue: #5A9BD5;   /* Balanced sky blue */
@@ -13,8 +13,9 @@
   /* font-family: "Oswald", serif; */
   /* font-family: "Bebas Neue", serif; */
   /* font-family: "Raleway", Arial, sans-serif; */
-  font-family: 'Roboto', sans-serif;
   /* font-family: 'Epilogue', sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
 }
 
