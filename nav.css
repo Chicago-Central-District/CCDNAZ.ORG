@@ -50,7 +50,7 @@ header {
   nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 10px 15px;
     display: inline-block;
     transition: color 0.3s ease, background-color 0.3s ease;
@@ -73,7 +73,7 @@ header {
   }
   
   .dropbtn {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -170,7 +170,7 @@ header {
       display: block;
       width: 100%;
       padding: 15px 0;
-      font-size: 1.5em;
+      font-size: 1.2em;
     }
   
     .show-menu {
@@ -210,7 +210,7 @@ header {
   
     /* Adjust text size for mobile */
     .dropdown-content a {
-      font-size: 1.1em;
+      font-size: 1rem;
       padding: 10px 0;
     }
   
