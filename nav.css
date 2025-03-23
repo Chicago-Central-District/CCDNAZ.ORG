@@ -18,7 +18,12 @@ header {
   }
 
   header.scrolled .nav-image {
-    height: 50px;
+    top: 55px;
+  }
+
+  header.scrolled nav ul {
+    top: 55px;
+    margin-top: 0px;
   }
   
   /* Navbar Layout */
@@ -160,6 +165,11 @@ header {
       flex-direction: column;
       text-align: center;
       padding-top: 10px;
+    }
+
+    header.scrolled nav ul {
+      top: 55px;
+      margin-top: 0px;
     }
   
     nav ul li {
