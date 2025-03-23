@@ -96,31 +96,45 @@ body{
  }
 
 
-
-video{
+#video-container{
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    height: fit-content;
+    position: relative;
+    margin-bottom: 100px;
+}
+video{
+    width: 80%;
     height: auto;
+    max-height: 600px;
+    max-width: 1066px;
+    margin: auto;
+    border: solid 5px var(--dark-text-blue);
+    border-radius: 30px;
 
 }
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 500px){
     video{
-        position: relative;
-        top: 60px;
+        width: 100%;
+        border-radius: 0px;
     }
 }
 #all-kinds{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 200px;
+    margin-top: 100px;
     /* width: 50%; */
-    max-width: 90vw;
+    max-width: 50vw;
 }
 #all-kinds-text{
     text-align: center;
     font-family: 'Arial Narrow', sans-serif;
-    font-size: clamp(10px, 8vw, 24px);
-    margin: 100px auto 100px auto;
+    font-size: 1.2rem;
+    margin: 100px auto 50px auto;
 }
 #all-kinds-text span{
     color: #0081b8;
@@ -128,7 +142,12 @@ video{
 hr{
     background-color: white;
     width: 80%;
-    margin: 150px auto 150px auto;
+    margin: 100px auto 100px auto;
+}
+@media only screen and (max-width: 1000px){
+    #all-kinds{
+        max-width: 90vw;
+    }
 }
 #subtitle{
     font-size: 32px;
@@ -232,5 +251,61 @@ hr{
         font-size: 24px;
         width: 100%;
         text-align: center;
+    }
+}
+
+
+
+
+
+.church-planting-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 0px;
+    width: 100vw;
+    justify-content: center;
+}
+
+.step-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    width: 220px;
+    min-width: 220px;
+    scroll-snap-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.step-card:hover {
+    transform: scale(1.05);
+}
+
+.step-card img {
+    width: 120%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.step-content {
+    padding: 15px;
+}
+
+.step-content h2 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.step-content p {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .step-card {
+        min-width: 180px;
     }
 }
