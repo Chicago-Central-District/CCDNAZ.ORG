@@ -1,65 +1,79 @@
-var nav = document.querySelector('nav');
-var menu = document.getElementById('menu');
-var ulold = document.getElementById('ul');
-var ul = document.getElementById('ul2');
-
-menu.onclick = () => {
-        if(ul.style.display == 'none'){
-            ul.style.display = 'flex';
-        }
-        else {
-            ul.style.display = 'none';
-            console.log("it works");
-        }
-}
-setInterval(() => {
-if(window.innerWidth > 1150){
-    ul.style.display = 'none';
-}
-}, 1)
-
-
-
-function toggleDropdown(e) {
-    // Prevent default action if any
-    e.preventDefault();
-
-    var dropdown = document.getElementById("myDropdown");
-    dropdown.classList.toggle("show");
-
-    // Close any open dropdowns if the click is outside the button
-    if (!e.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
-
-// Ensure the event object is passed properly when the event occurs
-document.querySelector('.dropbtn').onclick = function(event) {
-    toggleDropdown(event);
-};
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-};
-
-
-document.getElementById('close').addEventListener('click', () => {
-    ul.style.display = 'none';
+document.addEventListener("DOMContentLoaded", () => {
+  addHeader();
 });
 
-document.querySelector('.dropbtn').addEventListener('click', toggleDropdown());
+function addHeader() {
+  fetch("navbar.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("navbar-goes-here").innerHTML = data;
+      initDropdownContent(); // ✅ Runs after navbar is added
+      initMobileMenuClose(); // ✅ Now runs AFTER menu exists
+    })
+    .catch((error) => console.error("Error loading navbar:", error));
+}
+
+function initDropdownContent() {
+  const dropdowns = document.querySelectorAll(".dropdown");
+
+  document.addEventListener("click", function (event) {
+    const target = event.target;
+    const dropdown = target.closest(".dropdown");
+
+    // ✅ If clicking outside any dropdown, close all dropdowns
+    if (!dropdown) {
+      dropdowns.forEach((element) => {
+        element.classList.remove("dropdown--active");
+      });
+      return;
+    }
+
+    // ✅ If clicking inside a dropdown, check if it should be toggled
+    const isClosing = dropdown.classList.contains("dropdown--active");
+
+    dropdowns.forEach((element) => {
+      element.classList.remove("dropdown--active");
+    });
+
+    // ✅ Only toggle if it was not already open
+    if (!isClosing && target.closest(".dropbtn")) {
+      dropdown.classList.add("dropdown--active");
+    }
+  });
+}
+
+// ✅ Toggle the mobile menu when the hamburger icon is clicked
+function toggleMenu() {
+  var menu = document.getElementById("nav-links");
+  if (menu) {
+    menu.classList.toggle("show-menu");
+  }
+}
+
+// ✅ Close mobile nav when clicking outside of it
+function initMobileMenuClose() {
+  document.addEventListener("click", function (event) {
+    const menu = document.getElementById("nav-links");
+    const hamburger = document.querySelector(".hamburger"); // Ensure correct selector
+
+    // ✅ Ensure elements exist before accessing properties
+    if (!menu || !hamburger) return;
+
+    // ✅ Check if menu is open & user clicks outside
+    if (menu.classList.contains("show-menu") &&
+        !menu.contains(event.target) &&
+        !hamburger.contains(event.target)) {
+      menu.classList.remove("show-menu"); // ✅ Close menu
+    }
+  });
+}
+
+// Scroll Changes
+window.addEventListener("scroll", function() {
+  const navbar = document.querySelector("header");
+  if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+  } else {
+      navbar.classList.remove("scrolled");
+  }
+});
