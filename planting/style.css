@@ -296,11 +296,26 @@ hr{
 .step-content h2 {
     font-size: 1.2em;
     margin-bottom: 8px;
+    text-transform: uppercase;
 }
 
 .step-content p {
     font-size: 0.9em;
     line-height: 1.4;
+}
+
+.step-content a {
+    background-color: var(--dark-text-blue);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: block;
+}
+
+.step-content a:hover {
+    opacity: 0.9;
 }
 
 /* Responsive Design */
