@@ -427,6 +427,7 @@ video{
     /* position: relative; */
     width: 150px;
     height: 150px;
+    object-fit: cover;
 }
 #other-card-container .other-card #other-card-inner-one h2,
 #other-card-container .other-card #other-card-inner-two h2,
