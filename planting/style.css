@@ -297,6 +297,7 @@ hr{
     font-size: 1.2em;
     margin-bottom: 8px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .step-content p {
@@ -312,6 +313,8 @@ hr{
     border-radius: 50px;
     text-decoration: none;
     display: block;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .step-content a:hover {

@@ -133,14 +133,19 @@ video{
     width: 50%;
     object-fit: cover;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 .left img, .right img {
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 
 .left h1, .right h1 {
-    margin-bottom: 100px;
+    margin-bottom: 25px;
     font-size: 2rem;
 }
 .left li, .right li {
