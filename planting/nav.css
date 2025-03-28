@@ -149,7 +149,7 @@ header {
   /* Mobile Styles */
   @media (max-width: 1645px) {
     header {
-      padding: 0px 0px;
+      padding: 15px 0px;
     }
   
     nav ul {
