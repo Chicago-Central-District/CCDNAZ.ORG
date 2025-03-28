@@ -443,3 +443,87 @@ body {
 
 
 
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#card1, #card2, #card3 {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#card1 { background-image: url('images/events/dw1.jpeg'); }
+#card2 { background-image: url('images/District\ Assembly\ 24-330.jpg'); }
+#card3 { background-image: url('images/river-6175173_1280.jpg'); }
+
+#overlay1, #overlay2, #overlay3 {
+    position: absolute;
+    bottom: -75%;
+    left: 0;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    transition: bottom 0.5s ease-in-out;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+#card1:hover #overlay1,
+#card2:hover #overlay2,
+#card3:hover #overlay3 {
+    bottom: 0;
+}
+
+#card1:hover #overlay1 > p,
+#card2:hover #overlay2 > p,
+#card3:hover #overlay3 > p {
+    color: #d6d6d6;
+    font-size: 1.2rem;
+}
+
+#card1:hover #overlay1 > a,
+#card2:hover #overlay2 > a,
+#card3:hover #overlay3 > a {
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    #card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+  #card1, #card2, #card3 {
+    width: 250px;
+    height: 300px;
+  }
+  #card1:hover #overlay1 > p,
+  #card2:hover #overlay2 > p,
+  #card3:hover #overlay3 > p {
+    font-size: 1rem;
+}
+}
