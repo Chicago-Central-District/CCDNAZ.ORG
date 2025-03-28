@@ -227,7 +227,7 @@ a::after {
     object-fit: contain;
 }
 
-.content-section p a {
+.content-section p a, .content-section > div > a {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
@@ -240,7 +240,7 @@ a::after {
     text-transform: uppercase;
 }
 
-.content-section p a:hover {
+.content-section p a:hover, .content-section > div > a:hover {
     opacity: 0.9;
     transform: scale(1.02);
 }
