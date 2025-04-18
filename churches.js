@@ -129,10 +129,12 @@ function initializeMissionAreas(churches) {
 
         if (searchText.trim() === "") {
             document.getElementById("info-container").style.display = "flex";
+            buttonContainer.style.display = "flex"; // Show mission buttons
             // missionContainer.innerHTML = ""; // Hide churches when search is empty
             displayChurches(allChurches, sortedMissionAreas[0].abbreviation);
         } else {
             document.getElementById("info-container").style.display = "none";
+            buttonContainer.style.display = "none"; // Hide mission buttons
             displayChurches(filteredChurches, null); // Show only filtered churches
         }
     });
