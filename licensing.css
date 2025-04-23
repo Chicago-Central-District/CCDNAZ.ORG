@@ -1,5 +1,9 @@
+body {
+    background: url(images/white-gradient.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
 .steps-page {
-    background: var(--soft-gray-bg);
+    /* background: var(--soft-gray-bg); */
     color: var(--dark-text-blue);
     padding: 0px 20px;
     text-align: center;
@@ -19,7 +23,7 @@
     font-weight: bold;
     margin-bottom: 0px;
     width: 100%;
-    /* background: var(--dark-text-blue); */
+
     padding: 20px;
 }
 
@@ -133,9 +137,9 @@
 .step-content ul li a:hover {
     color: var(--primary-blue);
     border-bottom: 2px solid var(--primary-blue);
-}
+} 
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .steps-grid {
         grid-template-columns: 1fr;
@@ -161,7 +165,7 @@ h2{
 
 .section-header {
     min-width: 100vw;
-    height: 550px; /* Adjust height as needed */
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,10 +183,113 @@ h2{
     font-size: 4rem;
 }
 
-/* Responsive scaling */
 @media (max-width: 768px) {
     .section-header {
-        height: 380px; /* Slightly shorter on mobile */
+        height: 380px;
         font-size: 1.5rem;
     }
 }
+
+
+
+
+
+
+
+
+
+.steps-page {
+    padding: 40px 20px;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .steps-page h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .steps-page .intro {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .steps-page h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .step {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 5px solid #005baa;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step h3 {
+    margin: 0px auto;
+    color: #005baa;
+  }
+
+  a {
+    color: var(--dark-text-blue);
+    font-weight: bold;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .the-dropdown-content {
+    display: none;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid #005baa;
+    animation: fadeIn 0.3s ease-in-out;
+    text-align: left;
+  }
+  .the-dropdown-toggle {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 0.75rem 1rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    text-align: center;
+  }
+  .the-dropdown-toggle span.arrow {
+    transition: transform 0.3s ease;
+  }
+  .the-dropdown-toggle.open span.arrow {
+    transform: rotate(180deg);
+  }
+  .show {
+    display: block;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @media (max-width: 400px){
+    .the-dropdown-content {
+        padding-left: 0.1rem;
+    }
+    .step {
+        padding: 10px;
+        width: 100%;
+    }
+  }

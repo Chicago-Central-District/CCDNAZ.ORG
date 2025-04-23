@@ -1,0 +1,37 @@
+.info-section, .content-section, .arrow-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#inline{
+    background-color: transparent;
+    color: var(--primary-blue);
+    text-decoration: underline;
+    padding: 0px;
+    display: inline;
+    text-transform: none;
+}
+#poster{
+    margin-top: 50px;
+}
+#links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#links a{
+    flex: stretch;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 15px;
+}
