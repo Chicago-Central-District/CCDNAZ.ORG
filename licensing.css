@@ -98,20 +98,22 @@ body {
     text-align: center;
 }
 
-.step-content {
+.step-content, div .step-content {
     flex: 1;
+    color: var(--dark-text-blue);
+    text-align: left;
 }
 
 .step-content h2 {
     font-size: 1.5rem;
-    color: white;
+    color: var(--dark-text-blue);
     margin-bottom: 10px;
     text-transform: uppercase;
-}
+    text-align: left;}
 
 .step-content p {
     font-size: 1.2rem;
-    color: var(--soft-gray-bg);
+    color: var(--dark-text-blue);
     margin-bottom: 10px;
 }
 
@@ -123,11 +125,11 @@ body {
 .step-content ul li {
     font-size: 1.1rem;
     margin: 20px 0px;
-    color: white;
+    color: var(--dark-text-blue);
 }
 
 .step-content ul li a {
-    color: white;
+    color: var(--dark-text-blue);
     font-weight: bold;
     text-decoration: none;
     border-bottom: 2px solid white;
