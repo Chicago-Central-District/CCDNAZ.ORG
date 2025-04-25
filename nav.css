@@ -235,8 +235,8 @@ header {
     background: transparent;
     color: white;
     font-weight: bold;
-    padding: 12px 20px;
-    border-radius: 8px;
+    padding: 6px 10px;
+    border-radius: 50px;
     transition: background 0.3s ease, transform 0.2s ease;
     border: solid 2px white;
     width: fit-content;
