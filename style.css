@@ -58,11 +58,12 @@ body {
   visibility: hidden;
   text-align: center;
   padding: 60px 20px;
+  transition: fade ease 1.5s;
 }
 
 .mission-section.in-view {
   visibility: visible;
-  transition: fade 15s ease;
+  transition: fade 1s ease;
 }
 
 .mission-content {
