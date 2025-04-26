@@ -273,6 +273,7 @@ section {
 
 #background-element {
     width: 80vw;
+    max-width: 900px;
     height: auto;
     display: flex;
     align-items: center;

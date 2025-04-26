@@ -11,7 +11,7 @@ body{
 }
 /* Hero Section */
 .hero {
-    background: url('images/cityscape.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 44, 126, 0.5), rgba(0, 0, 0, 0.5)), url('images/cityscape.jpg') no-repeat center center/cover;
     height: 80vh;
     display: flex;
     align-items: center;
@@ -105,6 +105,8 @@ body{
     height: fit-content;
     position: relative;
     margin-bottom: 100px;
+    background: url('../images/Screenshot CCDCP.png');
+    background-size: cover;
 }
 video{
     width: 80%;
@@ -114,7 +116,6 @@ video{
     margin: auto;
     border: solid 5px var(--dark-text-blue);
     border-radius: 30px;
-
 }
 @media only screen and (max-width: 500px){
     video{

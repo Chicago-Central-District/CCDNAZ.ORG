@@ -66,14 +66,14 @@
   .interest-link {
     display: inline-block;
     margin-top: 1.5rem;
-    padding: 0.75rem 1.5rem;
+    padding: 1rem 2rem;
     background-color: var(--dark-text-blue);
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
-    border-radius: 4px;
+    border-radius: 50px;
     transition: background-color 0.3s ease;
   }
   
