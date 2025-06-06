@@ -9,11 +9,25 @@
 .footer {
     background-color: var(--dark-text-blue);
     color: var(--soft-gray-bg);
-    padding: 20px 0;
+    padding: 20px 0; 
+  }
+
+  .footer-left {
+    display: flex;
+    justify-content: right;
+  }
+
+  .footer-logo {
+    width: auto;
+    height: 160px;
+    margin-bottom: 20px;
   }
 
   .footer .container{
     padding: 0px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .footer-info {
@@ -43,6 +57,8 @@
   
   .footer-copyright {
     font-size: 1rem;
+    width: 100%;
+    text-align: center;
   }
   
   @media (max-width: 768px) {
