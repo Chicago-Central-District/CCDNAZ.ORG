@@ -68,8 +68,10 @@
     border: solid 2px var(--dark-text-blue);
     background: white;
     padding: 10px;
-    min-width: calc(100% - 20px);
+    width: calc(100% - 20px);
     border-radius: 10px;
+    max-width: 1400px;
+    margin: 0px auto;
 }
 
 #info-container {
@@ -195,7 +197,7 @@
     } */
   }
 
-  @media (max-width: 762px) {
+  @media (max-width: 862px) {
     /* .mission-item {
         flex: 1 1 40%;
     } */
