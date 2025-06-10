@@ -1,12 +1,176 @@
+body {
+  padding-top: 80px; /* space for navbar */
+}
+section {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.right {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.left-2 {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.right-2 {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.left img, .right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+.left img {
+  max-height: 100vh;
+  max-width: 80%;
+}
+
+
+
+
+.banner {
+  width: 100%;
+  padding: 2rem;
+  background: linear-gradient(15deg, rgb(7, 52, 177), var(--dark-text-blue));
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-2 {
+  width: 100%;
+  padding: 4rem 0px;
+  background: linear-gradient(15deg, rgb(7, 52, 177), var(--dark-text-blue));
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.banner h2, .banner-2 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  text-transform: uppercase;
+}
+.banner p, .banner-2 p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 1200px;
+}
+
+
+
+
+
+.inner {
+  width: 80%;
+}
+.assembly-image {
+  width: 100%;
+  height: 500px;
+  max-height: 450px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* object-fit: fit-content; */
+  color: var(--dark-text-blue);
+  margin-top: 50px;
+  object-fit: cover;
+}
+
+.assembly-image img, .le-image {
+  width: 100%;
+  max-width: 100%;
+  min-height: 450px;
+  height: auto;
+  /* object-fit: cover; */
+  object-position: center;
+  border-radius: 10px;
+}
+
+.assembly-text {
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  color: var(--dark-text-blue);
+}
+.assembly-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark-text-blue);
+  text-transform: uppercase;
+}
+.assembly-text p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 100px; /* space for navbar */
+  padding-top: 100px;   
   padding-bottom: 2rem;
   box-sizing: border-box;
   width: 100%;
-  height: calc(90vh - 100px); /* ensures it stays smaller than full viewport */
+  height: calc(90vh - 100px); 
   overflow: hidden;
 }
 
@@ -69,7 +233,7 @@
     border-radius: 10px;
   }
   
-  /* Special styling for vertical image */
+
   .assembly-block.reverse .assembly-image img {
     object-fit: contain;
     height: auto;
@@ -124,7 +288,7 @@
   }
   
   .themed-section, .assembly-block {
-    /* background-color: var(--section-bg); */
+
     padding: 3rem 1.5rem;
     font-family: var(--font);
     opacity: 0;
@@ -173,7 +337,7 @@
     color: #333;
   }
   
-  /* Responsive layout */
+
   @media (max-width: 980px) {
     .content-wrapper {
       flex-direction: column;
@@ -205,7 +369,7 @@
   }
   
   .interest-link:hover {
-    background-color: #102a40; /* a slightly darker shade */
+    background-color: #102a40;
   }
   
   @media (min-width: 768px) { 
@@ -270,7 +434,7 @@
   padding: 3rem 1rem;
   display: flex;
   justify-content: center;
-  background-color: var(--light-gray); /* Or keep white/transparent if preferred */
+  background-color: var(--light-gray); 
 }
 
 .flyer-img {
@@ -280,4 +444,4 @@
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   object-fit: contain;
-}
+}  */
