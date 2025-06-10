@@ -47,6 +47,7 @@
     text-align: left;
     width: 225px;
     text-transform: uppercase;
+    padding: 4px;
   }
   
   .team-member:hover {
@@ -58,6 +59,7 @@
     height: 300px;
     object-fit: cover;
     border-radius: 15px;
+    border: solid 2px var(--dark-text-blue);
   }
   
   .team-info {
