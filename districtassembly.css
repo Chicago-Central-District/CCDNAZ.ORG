@@ -20,6 +20,10 @@ img {
     border-radius: 24px;
 }
 
+.hero {
+    margin-bottom: 50px;
+}
+
 #district-assembly-hero {
     background: url('images/events/DSC_4174.jpg') no-repeat center center/cover;
     height: 80vh;
@@ -37,9 +41,10 @@ img {
 section, .banner, .banner-2, .banner-3, .long-container, .person-section {
     margin: 0 auto 40px auto;
     max-width: 1200px;
-    /* background: #fff; */
+    background: #fff;
+    /* filter: blur(5px); */
     border-radius: 32px;
-    box-shadow: 0 6px 32px 0 rgba(90,155,213,0.08);
+    box-shadow: 0 6px 32px 0 rgba(90, 156, 213, 0.761);
     padding: 56px 40px 56px 40px;
     display: flex;
     flex-direction: column;
@@ -47,6 +52,7 @@ section, .banner, .banner-2, .banner-3, .long-container, .person-section {
     justify-content: center;
     gap: 0;
 }
+
 
 .banner, .banner-2, .banner-3 {
     background: var(--dark-text-blue);
@@ -87,7 +93,8 @@ section, .banner, .banner-2, .banner-3, .long-container, .person-section {
     align-items: stretch;
     justify-content: center;
     gap: 0;
-    border-bottom: 1px solid #e0e0e0;
+    /* border-bottom: 1px solid #e0e0e0; */
+    /* box-shadow: #000 solid 5px; */
 }
 .banner-3 .long-container:last-child {
     border-bottom: none;
@@ -115,12 +122,13 @@ section, .banner, .banner-2, .banner-3, .long-container, .person-section {
     border-top-right-radius: 32px;
     border-bottom-right-radius: 32px;
     min-width: 0;
-    padding: 48px 0 48px 0;
+    padding: 0 0 0 0;
     box-shadow: none;
     object-fit: cover;
     height: 100%;
     max-height: 350px;
     overflow: hidden;
+    margin-right: 48px;
 }
 .banner-3 .image-container img {
     /* max-width: 320px; */
@@ -170,6 +178,9 @@ section, .banner, .banner-2, .banner-3, .long-container, .person-section {
     background: #000;
     color: #fff;
 }
+.banner-3 {
+    box-shadow: 0 6px 32px 0 rgba(147, 147, 147, 0.761);
+}
 @media (max-width: 900px) {
     .banner-3 .long-container {
         flex-direction: column;
@@ -177,7 +188,7 @@ section, .banner, .banner-2, .banner-3, .long-container, .person-section {
     }
     .banner-3 .text-container, .banner-3 .image-container {
         border-radius: 0;
-        padding: 32px 16px;
+        padding: 0px 0px;
     }
     .banner-3 .image-container img {
         max-width: 98vw;
@@ -246,6 +257,8 @@ section, .long-container {
     align-items: stretch;
     gap: 40px;
     /* Ensure children stretch to full height */
+    overflow: visible;
+    clear: both;
 }
 section > .left, section > .right, section > .left-2, section > .right-2, section > .left-3, section > .right-3 {
     flex: 1 1 0;
@@ -253,11 +266,13 @@ section > .left, section > .right, section > .left-2, section > .right-2, sectio
     display: flex;
     align-items: stretch;
     justify-content: center;
-    /* height: auto; */
-    position: relative;
-    /* height: 100%; */
-    min-height: 350px;
+    /* min-height: 350px; */
+    /* Remove position: relative to prevent stacking/overflow issues */
+    /* position: static; */
+    height: fit-content;
 }
+
+/* ...existing code... */
 
 #bptj-image {
     position: relative;
@@ -317,10 +332,10 @@ section {
     align-items: stretch;
     justify-content: center;
     gap: 0;
-    background: #ccc;
+    background: #bdbdbd;
     color: #000;
     border-radius: 32px;
-    box-shadow: 0 4px 24px 0 rgba(90,155,213,0.10);
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.715);
     padding: 0;
     margin-bottom: 40px;
     overflow: hidden;
@@ -353,7 +368,7 @@ section {
     right: 0;
     width: 2px;
     height: 80%;
-    background: #b0b0b0;
+    background: #515151;
     border-radius: 2px;
     z-index: 2;
 }
@@ -382,7 +397,7 @@ section {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 12px;
-    color: #000;
+    color: var(--dark-text-blue);
     text-transform: uppercase;
     text-align: left;
 }
@@ -399,6 +414,11 @@ section {
     box-shadow: 0 2px 12px 0 rgba(27,108,168,0.10);
     display: block;
     margin: 0 auto;
+}
+.flyer-section {
+    background: none;
+    border: none;
+    box-shadow: none;
 }
 @media (max-width: 900px) {
     .person-section {
@@ -436,6 +456,33 @@ section {
         max-width: 100vw;
         max-height: 300px;
     }
+    /* Stack image above text for split sections */
+    section, .long-container {
+        flex-direction: column;
+    }
+    .banner-3 .long-container {
+        flex-direction: column;
+    }
+    .banner-3 .image-container, .banner-3 .text-container {
+        border-radius: 0;
+        padding: 0px 0px;
+        width: 100%;
+        max-width: 100vw;
+    }
+    .banner-3 .image-container img {
+        max-width: 98vw;
+        margin: 0 0 16px 0;
+        height: auto;
+        min-height: unset;
+    }
+    .banner-3 .text-container {
+        align-items: center;
+        text-align: center;
+        padding-top: 0;
+    }
+    .banner-3 .section-title, .banner-3 .section-paragraph {
+        text-align: center;
+    }
 }
 @media (max-width: 700px) {
     .banner, .banner-2, .banner-3 {
@@ -468,8 +515,8 @@ section {
         max-width: 98vw;
     }
     .person img {
-        width: 48px;
-        height: 48px;
+        width: 100px;
+        height: 100px;
     }
     .text-container, .text-container-2 {
         padding: 0 2px;
@@ -499,7 +546,7 @@ body > section:nth-child(6) h2.section-title {
 }
 
 body > section:nth-child(9) {
-    background: #fff;
+    background: var(--dark-text-blue);
     border-radius: 32px;
     box-shadow: 0 6px 32px 0 rgba(90,155,213,0.10);
     display: flex;
@@ -515,7 +562,7 @@ body > section:nth-child(9) {
 }
 body > section:nth-child(9) .left {
     flex: 1 1 0;
-    background: #f2f2f2;
+    background: var(--dark-text-blue);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -544,7 +591,8 @@ body > section:nth-child(9) .image-container-ccg img {
 }
 body > section:nth-child(9) .right-2 {
     flex: 2 1 0;
-    background: var(--dark-text-blue);
+    background: #fff;
+    color: var(--dark-text-blue);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -554,7 +602,7 @@ body > section:nth-child(9) .right-2 {
     min-width: 0;
     padding: 48px 40px;
     text-align: left;
-    color: white;
+    color: var(--dark-text-blue);
 }
 body > section:nth-child(9) .text-container-2 {
     width: 100%;
@@ -566,7 +614,7 @@ body > section:nth-child(9) .text-container-2 {
     padding: 0;
 }
 body > section:nth-child(9) .section-title-2 {
-    color: white;
+    color: var(--dark-text-blue);
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 18px;
@@ -579,15 +627,15 @@ body > section:nth-child(9) .section-title-2 {
     text-align: left;
 }
 body > section:nth-child(9) .section-paragraph-2 {
-    color: white;
+    color: var(--dark-text-blue);
     font-size: 1.1rem;
     margin-bottom: 18px;
     text-align: left;
 }
 .interest-link-alt {
-    background: var(--dark-text-blue);
-    color: #fff;
-    border: solid 2px #fff;
+    background: #fff;
+    color: var(--dark-text-blue);
+    border: solid 2px var(--dark-text-blue);
     font-weight: 700;
     border-radius: 24px;
     padding: 10px 28px;
@@ -602,8 +650,9 @@ body > section:nth-child(9) .section-paragraph-2 {
     margin: auto;
 }
 body > section:nth-child(9) .interest-link-alt:hover {
-    scale: 1.05;
+    background: var(--dark-text-blue);
     color: #fff;
+    border: solid 2px #fff;
 }
 @media (max-width: 900px) {
     body > section:nth-child(9) {
@@ -638,4 +687,76 @@ video {
     min-height: 100%;
     pointer-events: none;
     background: #e9eef3;
+}
+
+/* --- Fix section overflow and stacking issues --- */
+section, .long-container, .person-section, .banner, .banner-2, .banner-3 {
+    overflow: visible !important;
+    position: static !important;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    clear: both;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+section > *, .long-container > *, .person-section > * {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    position: static !important;
+}
+
+/* Remove position: relative from section children to prevent stacking/overflow issues */
+section > .left, section > .right, section > .left-2, section > .right-2, section > .left-3, section > .right-3 {
+    position: static !important;
+}
+
+/* Ensure flex-direction: row only on large screens for split layouts */
+@media (min-width: 1101px) {
+    section, .long-container, .person-section {
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+
+/* Ensure margin-bottom is always present to separate sections */
+section, .banner, .banner-2, .banner-3, .long-container, .person-section {
+    margin-bottom: 40px;
+}
+
+/* Ensure no negative margins or overlapping paddings */
+section, .long-container, .person-section {
+    margin-top: 0;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+/* Fix for .banner-3 .long-container split layout on desktop */
+@media (min-width: 1101px) {
+    .banner-3 .long-container {
+        flex-direction: row;
+    }
+}
+
+/* On mobile, always stack image above text */
+@media (max-width: 1100px) {
+    section, .long-container, .person-section, .banner-3 .long-container {
+        flex-direction: column;
+    }
+}
+#ccg-section {
+    background: var(--dark-text-blue);
+    padding: 40px 20px;
+    border-radius: 32px;
+    box-shadow: 0 6px 32px 0 rgb(21, 96, 161);
+    margin-bottom: 40px;
+    color: white;
+}
+.section-title-2{
+    color: white;
+}
+.section-paragraph-2 {
+    color: white;
 }
